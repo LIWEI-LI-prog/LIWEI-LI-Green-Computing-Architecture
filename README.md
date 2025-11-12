@@ -88,7 +88,6 @@ This is a **complete conceptual release** - ready for community adoption, resear
 ```
 
 ---
-
 # Vision Statement
 
 ## A Gift to the Computing Community
