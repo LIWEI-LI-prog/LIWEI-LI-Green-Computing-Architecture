@@ -89,17 +89,6 @@ This is a **complete conceptual release** - ready for community adoption, resear
 
 ---
 
-2. 创建 WHITEPAPER.md
-
-使用我之前提供的完整白皮书V4.0内容
-
-3. 创建 TECHNICAL_REPORT.md
-
-使用我之前提供的完整技术报告V4.0内容
-
-4. 创建 VISION.md
-
-```markdown
 # Vision Statement
 
 ## A Gift to the Computing Community
