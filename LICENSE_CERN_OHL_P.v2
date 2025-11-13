@@ -38,3 +38,6 @@ For the full license text, see: https://ohwr.org/cern_ohl_p_v2.txt
 
 To apply this license to your work, include the following text in your
 documentation and design files:
+
+For software components, use the Apache License 2.0 included in the
+LICENSE_APACHE_2.0 file.
