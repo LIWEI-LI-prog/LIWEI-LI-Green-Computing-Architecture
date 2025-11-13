@@ -2,9 +2,10 @@
 
 > An open-source, revolutionary quad-function ternary optoelectronic stacked chip architecture for green & inclusive computing, pioneered by LIWEI LI.
 
-[![License: CERN-OHL-P-2.0](https://img.shields.io/badge/License-CERN--OHL--P--2.0-green.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-[![GitHub Issues](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](../../issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](../../pulls)
+[![License: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware%20License-CERN--OHL--P--2.0-blue.svg)](https://cern.ch/cern-ohl)
+[![License: Apache-2.0](https://img.shields.io/badge/Software%20License-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub Issues](https://img.shields.io/github/issues/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture)](https://github.com/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture/pulls)
 
 ## 🚀 Overview
 
@@ -32,10 +33,10 @@ By integrating **native ternary logic**, **photonic interconnects**, **3D hetero
 
 ## 📊 Key Advantages
 
-- **>10x Improvement** in Computational Energy Efficiency
-- **>5x Increase** in Compute Density
-- **Elimination of the Memory Wall** via Compute-in-Memory
-- **Sustainable Operation** through advanced thermal management
+*   **>10x Improvement** in Computational Energy Efficiency
+*   **>5x Increase** in Compute Density
+*   **Elimination of the Memory Wall** via Compute-in-Memory
+*   **Sustainable Operation** through advanced thermal management
 
 ## 📚 Documentation
 
@@ -49,10 +50,10 @@ By integrating **native ternary logic**, **photonic interconnects**, **3D hetero
 
 We welcome collaboration in four key areas:
 
-- **🔌 Device Physics**: Ternary CMOS and memory design
-- **🔦 Photonics**: Optical interconnects and modulation
-- **🛠️ Architecture & Tools**: TRISC-V ISA and compiler development
-- **🔥 System Integration**: 3D stacking and thermal management
+*   **🔌 Device Physics**: Ternary CMOS and memory design
+*   **🔦 Photonics**: Optical interconnects and modulation
+*   **🛠️ Architecture & Tools**: TRISC-V ISA and compiler development
+*   **🔥 System Integration**: 3D stacking and thermal management
 
 ## 🤝 How to Contribute
 
@@ -69,8 +70,8 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct]
 
 This project is released under open-source licenses to encourage broad collaboration and adoption:
 
-- **Hardware & Documentation**: [CERN Open Hardware License Version 2 - Permissive](LICENSE_CERN_OHL_P.v2)
-- **Software & Tools**: [Apache License 2.0](LICENSE_APACHE_2.0)
+*   **Hardware & Documentation**: [CERN Open Hardware License Version 2 - Permissive](LICENSE_CERN_OHL_P.v2)
+*   **Software & Tools**: [Apache License 2.0](LICENSE_APACHE_2.0)
 
 ## 🔮 The Vision
 
@@ -80,9 +81,9 @@ This project is released under open-source licenses to encourage broad collabora
 
 ## 🙋‍♂️ Connect & Discuss
 
-- **Questions?** → [Open an Issue](../../issues)
-- **Ideas?** → [Start a Discussion](../../discussions)
-- **Ready to Code?** → [Check Open Tasks](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+*   **Questions?** → [Open an Issue](../../issues)
+*   **Ideas?** → [Start a Discussion](../../discussions)
+*   **Ready to Code?** → [Check Open Tasks](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 
 ---
 
