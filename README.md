@@ -1,85 +1,89 @@
 # LIWEI LI Green Computing Architecture
 
-> Revolutionizing Computing with Native Ternary Logic and 3D Integration
+> An open-source, revolutionary quad-function ternary optoelectronic stacked chip architecture for green & inclusive computing, pioneered by LIWEI LI.
 
 [![License: CERN-OHL-P-2.0](https://img.shields.io/badge/License-CERN--OHL--P--2.0-green.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-[![PDF Documentation](https://img.shields.io/badge/PDF-Technical_Report-blue.svg)](docs/pdf/technical_report.pdf)
 [![GitHub Issues](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](../../issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](../../pulls)
 
-## 🚀 Quick Links
+## 🚀 Overview
 
-**➡️ [Read the White Paper](docs/WHITEPAPER.md)** - Strategic vision and high-level overview  
-**➡️ [Deep Dive: Technical Report](docs/TECHNICAL_REPORT.md)** - Complete implementation specifications  
-**➡️ [Getting Started Guide](docs/GETTING_STARTED.md)** - For researchers and implementers  
-**➡️ [Contribution Guidelines](CONTRIBUTING.md)** - How to join the research community
+This repository contains the open-source specification for the **"4+1" Full-Stack Ternary Green Computing Architecture**—a fundamental paradigm shift designed to break through the power, memory, and interconnect walls that limit modern computing.
 
-## 🎯 Executive Summary
+By integrating **native ternary logic**, **photonic interconnects**, **3D heterogeneous integration**, and **compute-in-memory**, this architecture paves the way for sustainable scaling of global computational capabilities.
 
-The computing industry faces an existential crisis: AI data centers are projected to consume 20% of global electricity by 2030, while Moore's Law has reached its physical limits. 
+## 🏗️ The "4+1" Architecture
+╔═══════════════════════════════════════╗
+║            +1 ENVELOPE                ║
+║    Integrated Thermal Management      ║
+╠═══════════════════════════════════════╣
+║    L4: Ternary Compute Layer          ║
+║      Native -1, 0, +1 Processing      ║
+╠═══════════════════════════════════════╣
+║    L3: Photonic Network Layer         ║
+║      Light-Speed Interconnects        ║
+╠═══════════════════════════════════════╣
+║    L2: Memory & Storage Layer         ║
+║      Compute-in-Memory Architecture   ║
+╠═══════════════════════════════════════╣
+║    L1: Interface & I/O Layer          ║
+║      Ternary-Binary Bridge            ║
+╚═══════════════════════════════════════╝
 
-**LIWEI LI Green Computing Architecture** presents a fundamental paradigm shift—moving beyond binary von Neumann architectures to achieve:
+## 📊 Key Advantages
 
-- **8-15× improvement in computational energy efficiency**
-- **3-5× increase in compute density**  
-- **Sustainable scaling** of global computational capabilities
+- **>10x Improvement** in Computational Energy Efficiency
+- **>5x Increase** in Compute Density
+- **Elimination of the Memory Wall** via Compute-in-Memory
+- **Sustainable Operation** through advanced thermal management
 
-## 🏗️ Core Architecture
+## 📚 Documentation
 
-## 📊 Performance Highlights
+| Document | Description | Link |
+|:---|:---|:---|
+| **White Paper** | Strategic vision and high-level overview | [📄 WHITEPAPER.md](docs/WHITEPAPER.md) |
+| **Technical Report** | Implementation details and specifications | [🔧 TECHNICAL_REPORT.md](docs/TECHNICAL_REPORT.md) |
+| **Getting Started** | Guide for researchers and developers | [🚀 GETTING_STARTED.md](docs/GETTING_STARTED.md) |
 
-| Metric | Improvement | Key Innovation |
-|--------|-------------|----------------|
-| Energy Efficiency | 8-15× | Native Ternary Logic |
-| Compute Density | 3-5× | 3D Heterogeneous Integration |
-| Memory Access Energy | 3-5× | Compute-in-Memory |
-| Interconnect Energy | 6-12× | Photonic PAM-3 |
+## 🛠️ Research & Development Tracks
 
-## 🔬 Research Tracks
+We welcome collaboration in four key areas:
 
-We welcome collaboration in these key areas:
+- **🔌 Device Physics**: Ternary CMOS and memory design
+- **🔦 Photonics**: Optical interconnects and modulation
+- **🛠️ Architecture & Tools**: TRISC-V ISA and compiler development
+- **🔥 System Integration**: 3D stacking and thermal management
 
-- **🔌 Ternary Device Physics** - Novel CMOS and memory designs
-- **🔦 Photonic Interconnects** - PAM-3 optical modulation  
-- **🛠️ Compiler & Tools** - TRISC-V toolchain development
-- **🔥 System Integration** - Thermal management and 3D stacking
+## 🤝 How to Contribute
 
-## 🤝 Get Involved
+We are building a global research community to bring this vision to life. Here's how you can help:
 
-### For Researchers
-1. Read our [Technical Report](docs/TECHNICAL_REPORT.md)
-2. Choose a [research track](docs/GETTING_STARTED.md#-research--development-tracks)
-3. Open an [Issue](../../issues) to discuss your approach
+1.  **Read** the [White Paper](docs/WHITEPAPER.md) and [Technical Report](docs/TECHNICAL_REPORT.md).
+2.  **Choose** a research track that matches your expertise.
+3.  **Discuss** your ideas in [GitHub Issues](../../issues) or [Discussions](../../discussions).
+4.  **Submit** your contributions via [Pull Requests](../../pulls).
 
-### For Developers
-1. Check [open challenges](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-2. Review [contribution guidelines](CONTRIBUTING.md)
-3. Submit Pull Requests with your implementations
-
-### For Industry Partners
-1. Review the [White Paper](docs/WHITEPAPER.md) for strategic fit
-2. Contact us for collaboration opportunities
-3. Consider implementation partnerships
-
-## 📁 Repository Structure
-
-## 🗺️ Project Status
-
-**Current Phase**: Conceptual Specification & Community Building  
-**Next Milestone**: First reference implementations and simulations  
-**Long-term Vision**: Commercial-grade sustainable computing infrastructure
+Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before getting started.
 
 ## ⚖️ License
 
-This project uses dual licensing:
-- **Hardware & Architecture**: [CERN Open Hardware License Version 2 - Permissive](LICENSE_CERN_OHL_P.v2)
+This project is released under open-source licenses to encourage broad collaboration and adoption:
+
+- **Hardware & Documentation**: [CERN Open Hardware License Version 2 - Permissive](LICENSE_CERN_OHL_P.v2)
 - **Software & Tools**: [Apache License 2.0](LICENSE_APACHE_2.0)
 
-## 🙏 Acknowledgments
+## 🔮 The Vision
 
-Special recognition to the open-source hardware community and researchers pushing the boundaries of sustainable computing.
+> "To enable a future where computational growth and environmental sustainability are not in conflict, but are mutually reinforcing goals."
 
 ---
 
-*Pioneered by LIWEI LI - Building a Sustainable Computational Future for All*
+## 🙋‍♂️ Connect & Discuss
 
-**➡️ [Join the Discussion](../../discussions) | [Report an Issue](../../issues) | [View Open Tasks](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)**
+- **Questions?** → [Open an Issue](../../issues)
+- **Ideas?** → [Start a Discussion](../../discussions)
+- **Ready to Code?** → [Check Open Tasks](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
+
+---
+
+*Pioneered by LIWEI LI — Building a sustainable computational future for all.*
