@@ -1,0 +1,40 @@
+CERN Open Hardware Licence Version 2 - Permissive
+
+Copyright (c) 2025 LIWEI LI
+
+This source describes Open Hardware and is licensed under the CERN-OHL-P v2.
+
+You may redistribute and modify this source and make products using it under
+the terms of the CERN-OHL-P v2 (https://ohwr.org/cern_ohl_p_v2.txt).
+
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING
+OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN-OHL-P v2 for applicable conditions.
+
+Source location: https://github.com/liweili/green-computing-architecture
+
+The documentation and design files are released under the CERN-OHL-P v2. The
+accompanying software and tools are released under Apache License 2.0.
+
+This documentation and associated design files are provided "as is" without
+warranty of any kind, either expressed or implied, including, but not limited
+to, the implied warranties of merchantability and fitness for a particular
+purpose. The entire risk as to the quality and performance of the documentation
+and design files is with you.
+
+## Notice
+
+This license gives permission to use, copy, modify and distribute the
+documentation and design files, and to manufacture products based on those
+files, provided that:
+
+1. You give appropriate credit to the original author(s) and source
+2. Any modifications are clearly indicated
+3. The documentation and design files are distributed under the same license
+
+For the full license text, see: https://ohwr.org/cern_ohl_p_v2.txt
+
+## How to Apply This License
+
+To apply this license to your work, include the following text in your
+documentation and design files:
