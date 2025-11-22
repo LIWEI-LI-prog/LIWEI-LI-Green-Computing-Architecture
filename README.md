@@ -1,90 +1,92 @@
 # LIWEI LI Green Computing Architecture
 
-> An open-source, revolutionary quad-function ternary optoelectronic stacked chip architecture for green & inclusive computing, pioneered by LIWEI LI.
+> **An open-source, full-stack blueprint for sustainable computing, leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
 
-[![License: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware%20License-CERN--OHL--P--2.0-blue.svg)](https://cern.ch/cern-ohl)
-[![License: Apache-2.0](https://img.shields.io/badge/Software%20License-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![GitHub Issues](https://img.shields.io/github/issues/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture)](https://github.com/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/LIVEI-LI-prog/LIVEI-LI-Green-Computing-Architecture/pulls)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Project Status: Vision](https://img.shields.io/badge/Status-Architectural%20Blueprint-important)](https://github.com/your_username/your_repo_name)
 
-## 🚀 Overview
+## 🚀 Vision
 
-This repository contains the open-source specification for the **"4+1" Full-Stack Ternary Green Computing Architecture**—a fundamental paradigm shift designed to break through the power, memory, and interconnect walls that limit modern computing.
+We envision a future where powerful computational capacity is **as accessible, affordable, and environmentally sustainable as water and electricity.** This project is the first step towards that future, proposing a fundamental architectural revolution to break through the energy and efficiency walls of traditional computing.
 
-By integrating **native ternary logic**, **photonic interconnects**, **3D heterogeneous integration**, and **compute-in-memory**, this architecture paves the way for sustainable scaling of global computational capabilities.
+## 💡 The Core Innovation: "4+1" Full-Stack Architecture
 
-## 🏗️ The "4+1" Architecture
-╔═══════════════════════════════════════╗
-║            +1 ENVELOPE                ║
-║    Integrated Thermal Management      ║
-╠═══════════════════════════════════════╣
-║    L4: Ternary Compute Layer          ║
-║      Native -1, 0, +1 Processing      ║
-╠═══════════════════════════════════════╣
-║    L3: Photonic Network Layer         ║
-║      Light-Speed Interconnects        ║
-╠═══════════════════════════════════════╣
-║    L2: Memory & Storage Layer         ║
-║      Compute-in-Memory Architecture   ║
-╠═══════════════════════════════════════╣
-║    L1: Interface & I/O Layer          ║
-║      Ternary-Binary Bridge            ║
-╚═══════════════════════════════════════╝
+This is not an incremental improvement. It's a complete, vertically integrated computing architecture that co-designs two transformative technologies:
 
-## 📊 Key Advantages
+### 1. 🧠 Ternary Computing (The "Brain")
+- **What:** A three-state logic system (`-1, 0, +1`) that moves beyond binary (`0, 1`).
+- **Why:** Processes more information per operation, significantly reducing computational complexity and energy consumption at the source.
+- **Example:** A Ternary Full Adder uses **37.5% fewer gates** than its binary counterpart.
 
-*   **>10x Improvement** in Computational Energy Efficiency
-*   **>5x Increase** in Compute Density
-*   **Elimination of the Memory Wall** via Compute-in-Memory
-*   **Sustainable Operation** through advanced thermal management
+### 2. 🔦 Photonic Interconnects (The "Nervous System")
+- **What:** Using light instead of electricity to move data *inside* the chip via 3D-integrated silicon photonics.
+- **Why:** Eliminates the "memory wall" and "bandwidth wall," enabling ultra-high-speed, ultra-low-power data movement.
 
-## 📚 Documentation
+These pillars are integrated into a **3D-stacked "4+1" architecture**:
+- **L4:** Ternary Compute Layer (14nm FDSOI)
+- **L3:** Photonic Routing Layer (45nm SOI)
+- **L2:** Ternary Memory Layer (28nm + Phase-Change Memory)
+- **L1:** Smart I/O Layer (28nm)
+- **+1:** Vertical integration with Through-Silicon Vias (TSVs) and microfluidic cooling.
 
-| Document | Description | Link |
-|:---|:---|:---|
-| **White Paper** | Strategic vision and high-level overview | [📄 WHITEPAPER.md](docs/WHITEPAPER.md) |
-| **Technical Report** | Implementation details and specifications | [🔧 TECHNICAL_REPORT.md](docs/TECHNICAL_REPORT.md) |
-| **Getting Started** | Guide for researchers and developers | [🚀 GETTING_STARTED.md](docs/GETTING_STARTED.md) |
+## 📁 Repository Structure
 
-## 🛠️ Research & Development Tracks
+```
 
-We welcome collaboration in four key areas:
+.
+├── 📄 LICENSE
+├── 📖 Documentation/
+│   ├── 4+1_Technical_Report.pdf  # Comprehensive implementation details
+│   ├── Photonic_Chip_Overview.pdf # Philosophy of the photonic layer
+│   └── TRISC-V_ISA_Extension.md   # Ternary computing instruction set
+├── 💻 Hardware/
+│   ├── stdcell/    # Ternary Standard Cell Library (Liberty, LEF, GDS)
+│   ├── pdk/        # Photonic Component PDK & Models
+│   └── 3d_kit/     # 3D Integration (TSV models, thermal analysis)
+├── 🛠️ Software/
+│   ├── toolchain/  # TRISC-V Toolchain (GCC, LLVM, binutils)
+│   ├── simulator/  # Ternary SystemC/Verilog Simulator
+│   └── gem5/       # Architecture Simulator Integration
+└── 🤝 Community/
+└── CONTRIBUTING.md
 
-*   **🔌 Device Physics**: Ternary CMOS and memory design
-*   **🔦 Photonics**: Optical interconnects and modulation
-*   **🛠️ Architecture & Tools**: TRISC-V ISA and compiler development
-*   **🔥 System Integration**: 3D stacking and thermal management
+```
 
-## 🤝 How to Contribute
+## 🚀 Getting Started
 
-We are building a global research community to bring this vision to life. Here's how you can help:
+We welcome contributions at all levels! Here are some entry points:
 
-1.  **Read** the [White Paper](docs/WHITEPAPER.md) and [Technical Report](docs/TECHNICAL_REPORT.md).
-2.  **Choose** a research track that matches your expertise.
-3.  **Discuss** your ideas in [GitHub Issues](../../issues) or [Discussions](../../discussions).
-4.  **Submit** your contributions via [Pull Requests](../../pulls).
+### For Software Developers & Researchers:
+1. **Explore the Simulator:** Run the ternary logic simulator to understand the core computational model.
+2. **Port an Algorithm:** Try implementing a classic AI kernel (like a matrix multiplication) using ternary operations.
+3. **Contribute to the Toolchain:** Help improve the TRISC-V compiler support for ternary instructions.
 
-Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before getting started.
+### For Hardware Engineers & Students:
+1. **Study the Standard Cells:** Analyze the ternary logic gate designs in the `hardware/stdcell` directory.
+2. **Run a Workflow:** Use the provided PDK with open-source EDA tools (e.g., OpenROAD) to experiment with physical design.
+3. **Propose an Optimization:** Suggest improvements to the 3D integration or photonic routing.
 
-## ⚖️ License
+### For Everyone:
+- **Star this repo** to show your support.
+- **Share** the project with your network.
+- **Start a discussion** in the Issues section with your ideas or questions.
 
-This project is released under open-source licenses to encourage broad collaboration and adoption:
+## 📜 License
 
-*   **Hardware & Documentation**: [CERN Open Hardware License Version 2 - Permissive](LICENSE_CERN_OHL_P.v2)
-*   **Software & Tools**: [Apache License 2.0](LICENSE_APACHE_2.0)
+This project, including all design files and documentation, is released under the **Apache License, Version 2.0**. Commercial and academic use is permitted with attribution.
 
-## 🔮 The Vision
+## 🙋‍♂️ Join the Movement
 
-> "To enable a future where computational growth and environmental sustainability are not in conflict, but are mutually reinforcing goals."
+This is more than a project; it's the beginning of a collective effort to redefine the foundations of computing for a greener world.
+
+**Your curiosity, expertise, and passion are the most valuable resources.**
+
+- **Explore the Code & Docs:** Dive into the repositories above.
+- **Start a Conversation:** Open an Issue to ask questions or share ideas.
+- **Spread the Word:** Share this repository with anyone who might be interested.
+
+**Welcome, and let's build a sustainable computing future, together.**
 
 ---
-
-## 🙋‍♂️ Connect & Discuss
-
-*   **Questions?** → [Open an Issue](../../issues)
-*   **Ideas?** → [Start a Discussion](../../discussions)
-*   **Ready to Code?** → [Check Open Tasks](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
-
----
-
-*Pioneered by LIWEI LI — Building a sustainable computational future for all.*
+*Architectural Concept & Open-Source Release by LIWEI LI*
+```
