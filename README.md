@@ -35,6 +35,35 @@ We welcome contributors from all backgrounds!
 
 ## 📁 Project Structure
 
+```
+LIWEI-LI-Green-Computing-Architecture/
+│
+├── 📖 Documentation/                 # Technical Documentation & Whitepapers
+│   └── Fabrication_Technology_Report.md  # Manufacturing Process Report
+│
+├── 💻 Hardware/                     # Hardware Design Files
+│   ├── stdcell/                     # Ternary Standard Cell Library
+│   ├── pdk/                         # Photonic Component PDK  
+│   └── 3d_kit/                      # 3D Integration Solutions
+│
+├── 🛠️ Software/                    # Software Toolchain
+│   ├── toolchain/                   # TRISC-V Toolchain
+│   ├── simulator/                   # Ternary System Simulator
+│   └── gem5/                        # Architecture Simulator Integration
+│
+├── 🤝 Community/                    # Community Resources
+│   └── CONTRIBUTING.md              # Contribution Guidelines
+│
+├── 📄 LICENSE                       # Apache 2.0 License
+├── 🌐 README.md                     # Main Project Documentation (English)
+└── 🌐 README_ZH.md                  # Chinese Documentation
+```
+
+**Status Legend:**
+- 🟢 **Active Development** - Ready for contributions
+- 🟡 **Planning Phase** - In design, discussions welcome  
+- 🔵 **Foundation Ready** - Basic framework established
+
 ## 🙋 Join the Movement
 
 This is more than code - it's a collective effort to redefine computing foundations.
