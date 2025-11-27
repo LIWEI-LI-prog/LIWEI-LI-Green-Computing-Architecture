@@ -1,92 +1,45 @@
-# LIWEI LI Green Computing Architecture
+# LIWEI LI Green Computing Architecture 🌱
 
-> **An open-source, full-stack blueprint for sustainable computing, leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
+[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
+[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Project Status: Vision](https://img.shields.io/badge/Status-Architectural%20Blueprint-important)](https://github.com/your_username/your_repo_name)
+**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
 
-## 🚀 Vision
+---
 
-We envision a future where powerful computational capacity is **as accessible, affordable, and environmentally sustainable as water and electricity.** This project is the first step towards that future, proposing a fundamental architectural revolution to break through the energy and efficiency walls of traditional computing.
+## 🚀 The Vision
 
-## 💡 The Core Innovation: "4+1" Full-Stack Architecture
+We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
 
-This is not an incremental improvement. It's a complete, vertically integrated computing architecture that co-designs two transformative technologies:
+## 💡 Core Innovation: "4+1" Architecture
 
-### 1. 🧠 Ternary Computing (The "Brain")
-- **What:** A three-state logic system (`-1, 0, +1`) that moves beyond binary (`0, 1`).
-- **Why:** Processes more information per operation, significantly reducing computational complexity and energy consumption at the source.
-- **Example:** A Ternary Full Adder uses **37.5% fewer gates** than its binary counterpart.
+### 🧠 Ternary Computing
+- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
+- **Why**: Higher information density, reducing computational complexity
+- **Example**: Ternary full adder uses 37.5% fewer gates
 
-### 2. 🔦 Photonic Interconnects (The "Nervous System")
-- **What:** Using light instead of electricity to move data *inside* the chip via 3D-integrated silicon photonics.
-- **Why:** Eliminates the "memory wall" and "bandwidth wall," enabling ultra-high-speed, ultra-low-power data movement.
+### 🔦 Photonic Interconnects  
+- **What**: Using light instead of electricity for data movement
+- **Why**: Eliminates "memory wall" and "bandwidth wall"
 
-These pillars are integrated into a **3D-stacked "4+1" architecture**:
-- **L4:** Ternary Compute Layer (14nm FDSOI)
-- **L3:** Photonic Routing Layer (45nm SOI)
-- **L2:** Ternary Memory Layer (28nm + Phase-Change Memory)
-- **L1:** Smart I/O Layer (28nm)
-- **+1:** Vertical integration with Through-Silicon Vias (TSVs) and microfluidic cooling.
+## 🎯 Get Started
 
-## 📁 Repository Structure
+We welcome contributors from all backgrounds!
 
-```
+**Quick Start:**
+1. ⭐ **Star this repo** to show your support
+2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
+3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
+4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
 
-.
-├── 📄 LICENSE
-├── 📖 Documentation/
-│   ├── 4+1_Technical_Report.pdf  # Comprehensive implementation details
-│   ├── Photonic_Chip_Overview.pdf # Philosophy of the photonic layer
-│   └── TRISC-V_ISA_Extension.md   # Ternary computing instruction set
-├── 💻 Hardware/
-│   ├── stdcell/    # Ternary Standard Cell Library (Liberty, LEF, GDS)
-│   ├── pdk/        # Photonic Component PDK & Models
-│   └── 3d_kit/     # 3D Integration (TSV models, thermal analysis)
-├── 🛠️ Software/
-│   ├── toolchain/  # TRISC-V Toolchain (GCC, LLVM, binutils)
-│   ├── simulator/  # Ternary SystemC/Verilog Simulator
-│   └── gem5/       # Architecture Simulator Integration
-└── 🤝 Community/
-└── CONTRIBUTING.md
+## 📁 Project Structure
 
-```
+## 🙋 Join the Movement
 
-## 🚀 Getting Started
+This is more than code - it's a collective effort to redefine computing foundations.
 
-We welcome contributions at all levels! Here are some entry points:
-
-### For Software Developers & Researchers:
-1. **Explore the Simulator:** Run the ternary logic simulator to understand the core computational model.
-2. **Port an Algorithm:** Try implementing a classic AI kernel (like a matrix multiplication) using ternary operations.
-3. **Contribute to the Toolchain:** Help improve the TRISC-V compiler support for ternary instructions.
-
-### For Hardware Engineers & Students:
-1. **Study the Standard Cells:** Analyze the ternary logic gate designs in the `hardware/stdcell` directory.
-2. **Run a Workflow:** Use the provided PDK with open-source EDA tools (e.g., OpenROAD) to experiment with physical design.
-3. **Propose an Optimization:** Suggest improvements to the 3D integration or photonic routing.
-
-### For Everyone:
-- **Star this repo** to show your support.
-- **Share** the project with your network.
-- **Start a discussion** in the Issues section with your ideas or questions.
-
-## 📜 License
-
-This project, including all design files and documentation, is released under the **Apache License, Version 2.0**. Commercial and academic use is permitted with attribution.
-
-## 🙋‍♂️ Join the Movement
-
-This is more than a project; it's the beginning of a collective effort to redefine the foundations of computing for a greener world.
-
-**Your curiosity, expertise, and passion are the most valuable resources.**
-
-- **Explore the Code & Docs:** Dive into the repositories above.
-- **Start a Conversation:** Open an Issue to ask questions or share ideas.
-- **Spread the Word:** Share this repository with anyone who might be interested.
-
-**Welcome, and let's build a sustainable computing future, together.**
+**Your curiosity and expertise are our most valuable resources.**
 
 ---
 *Architectural Concept & Open-Source Release by LIWEI LI*
-```
