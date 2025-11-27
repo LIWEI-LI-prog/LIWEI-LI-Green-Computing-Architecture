@@ -1,74 +1,139 @@
-# True Fabrication Report: LED-Inspired Photonic Computing Architecture
+"Qian" Series 4+1 Heterogeneous Stacked Ternary LED-Style Wafer Fabrication Technology Report
 
-**Date:** November 27, 2025  
-**Author:** LIWEI LI  
-**Status:** Foundational Concept - A Clean-Slate Breakthrough
+Document ID: QIAN-PTR-001
+Version: 3.0
+Release Date: November 27, 2025
+Original Inventor: LIWEI LI
+Core Technologies: Ternary Optical Logic / Micro-LED Light Sources / Heterogeneous Stacking / Photonic-Native Computing
+Process Platform: 200mm GaN-on-Silicon Photonics Platform
+License: CERN Open Hardware License Version 2 - Permissive
 
-## 1. Core Principle: Rejecting Silicon Baseline
+1. Abstract
 
-This architecture **fundamentally rejects the silicon CMOS process** as its foundation. Instead, it embraces a photocentric paradigm where **light is the native information carrier and computational medium.**
+This report presents a revolutionary chip fabrication paradigm - "Heterogeneous Stacking." This technology abandons the traditional von Neumann architecture and electronic computing paradigm of silicon-based CMOS, instead adopting a ternary photonic computing architecture that uses micro-LEDs as native computing elements. Through the "4+1" functional partitioning and heterogeneous wafer stacking technology, we achieve optical integration of computing, memory, and communication in three-dimensional space, providing a physical foundation for next-generation high-efficiency, low-latency, and secure computing systems.
 
-## 2. Manufacturing Philosophy: From Luminescent Materials
+2. Core Philosophy: From "Etching Silicon" to "Growing Light"
 
-We abandon the path of "etching transistors in silicon" and pursue **"growing computational structures from light-emitting materials."**
+The fundamental breakthrough of this technology lies in a philosophical shift:
 
-### 2.1 Material Foundation: Gallium Nitride (GaN) Platform
-- **Core Material:** III-V semiconductors, primarily Gallium Nitride
-- **Why:** Native light-emitting capability (direct bandgap)
-- **Form:** Epitaxial growth on various substrates (GaN-on-Si, GaN-on-Sapphire)
+· Traditional Paradigm (Etching Silicon): "Carving" paths for electrons (transistors) through complex etching processes on passive silicon substrates.
+· Our Paradigm (Growing Light): "Growing" computational structures that can generate, modulate, and manipulate photons through epitaxial growth on active light-emitting materials (like GaN).
 
-### 2.2 Process Node: Micron-Scale Luminescent Computing
-- **Target:** Not nanometer transistor size, but **micron-scale photonic computational cells**
-- **Metric:** Functional density per optical wavelength, not transistor count
+The term "Heterogeneous Stacking" precisely describes the core feature of integrating wafers of different materials, different functions, and different processes (heterogeneous) into a high-density system through vertical interconnection technology (stacking).
 
-## 3. Architectural Implementation: The Light-Native Stack
+3. "4+1" Photonic-Native Architecture
 
-### 3.1 Computational Photonic Array (L4)
-- **Composition:** Dense arrays of microscopic GaN LEDs
-- **Function:** Each LED serves as both light source and computational element
-- **Operation:** Optical intensity modulation for ternary state representation (-1, 0, +1)
+Our architecture is a bottom-up vertically integrated system:
 
-### 3.2 Dynamic Photonic Network (L3)
-- **Composition:** Active optical switches and routers
-- **Technology:** Electro-optic modulators based on GaN
-- **Function:** Real-time reconfiguration of light paths
+L1: Intelligent Substrate Layer
 
-### 3.3 Optical Memory Matrix (L2)
-- **Technology:** Phase-change materials integrated with photonic elements
-- **Operation:** Optical read/write operations using different wavelengths
-- **Benefit:** True in-memory photonic computing
+· Function: System foundation, providing wafer-level power delivery, global clocking, thermal management, and external optical I/O.
+· Technology: High-resistivity silicon substrate with integrated microchannels and Through-Silicon Vias.
 
-## 4. Revolutionary Advantages
+L2: Optical Memory Layer
 
-### 4.1 Inherent Security
-- **Electromagnetic Silence:** No electrical signals to intercept
-- **Physical Isolation:** Optical confinement prevents external probing
-- **Quantum-Safe:** Photonic information transfer resists classical eavesdropping
+· Function: Ternary optical storage and compute-in-memory.
+· Technology: Phase-change material based ternary state (-1, 0, +1) storage via optical write/read, supporting parallel optical matrix operations.
 
-### 4.2 Ultimate Energy Efficiency
-- **Native Light Processing:** Eliminates photoelectric conversion overhead
-- **Parallel by Nature:** Wavelength division multiplexing for massive parallelism
-- **Minimal Heat Generation:** Primary energy converts to light, not heat
+L3: Optical Routing Layer
 
-## 5. Implementation Challenge Strategy
+· Function: On-die global optical communication and reconfigurable optical network.
+· Technology: Silicon nitride waveguides and micro-LED optical I/O arrays enabling wavelength-division multiplexed ultra-high bandwidth communication.
 
-### 5.1 Immediate Path (2025-2026)
-- Develop basic GaN photonic logic gates
-- Demonstrate optical ternary full adder
-- Create simulation framework for photonic architecture
+L4: Optical Computing Layer
 
-### 5.2 Medium-term Goal (2026-2027)
-- Integrate optical memory elements
-- Demonstrate simple photonic neural network
-- Establish open-source photonic design tools
+· Function: Ternary optical logic computing core.
+· Technology: Micro-LED Computing Array. Each micro-LED is not just a light source but a ternary logic operation unit, directly representing ternary states through its luminous intensity (no light, threshold light, saturated light).
 
-### 5.3 Long-term Vision (2027+)
-- Full photonic computing system
-- Commercial-scale manufacturing partnerships
-- New programming paradigm for photonic computing
++1: Meta-Orchestration Layer
 
-## 6. Conclusion: A New Beginning
+· Function: System soul, responsible for optical path orchestration, resource scheduling, and ternary instruction execution.
+· Technology: TRISC-V instruction set and compiler specifically designed for ternary photonic computing, mapping computational tasks to physical optical path configurations.
 
-This report outlines a complete departure from semiconductor convention. We are not improving existing technology—we are **building the first native photonic computing infrastructure**, where computation emerges from the fundamental properties of light and luminescent materials.
+4. LED-Style Wafer Fabrication Process Details
 
-The future of computing will not be measured in nanometers, but in **photonic computational density.**
+Our process is a typical "bottom-up" construction process.
+
+4.1 L1 Intelligent Substrate Fabrication (Silicon-based)
+
+1. Preparation of high-resistivity silicon substrate.
+2. Deep silicon etching to form Through-Silicon Vias and embedded microchannels.
+3. Deposition of insulating and metal layers to complete the power delivery network.
+4. Fabrication of silicon grating couplers to provide optical ports for external fiber attachment.
+
+4.2 L2 Optical Memory Layer Fabrication (Silicon-based + Phase-Change Material)
+
+1. Standard CMOS peripheral circuit fabrication on another silicon wafer.
+2. Deposition and patterning of phase-change material in the back-end-of-line to form ternary memory cells.
+3. Wafer thinning and planarization via Chemical Mechanical Polishing.
+
+4.3 L3 & L4 Optical Routing & Computing Layer Fabrication (GaN-on-Si Co-growth)
+
+This is the most revolutionary step, where we monolithically integrate the routing elements of the L3 layer and the computing units of the L4 layer within a single GaN epitaxial process:
+
+1. GaN Epitaxial Growth: Sequential growth of n-type GaN, multiple quantum well active region, and p-type GaN on a 200mm silicon substrate.
+2. Micro-LED Computing Array Fabrication (L4):
+   · Formation of micro-LED mesa structures via Inductively Coupled Plasma - Reactive Ion Etching.
+   · Deposition of transparent conductive electrodes.
+   · Definition of millions of independent micro-LED pixels, each capable of functioning as a ternary logic gate.
+3. Photonic Routing Network Fabrication (L3):
+   · Formation of low-loss optical waveguides via etching in different regions of the same GaN wafer.
+   · Fabrication of electro-optic modulators and optical switches for dynamic optical routing.
+   · Fabrication of micro-LEDs serving as on-chip optical transmitters, replacing traditional external lasers.
+
+4.4 Heterogeneous Stacking (Heterogeneous Wafer Integration)
+
+1. Face-to-face thermo-compression bonding of the completed L3/L4 GaN wafer with the L2 Optical Memory Layer silicon wafer. The bonding interface simultaneously forms millions of copper micro-bumps for inter-layer electrical interconnection.
+2. Bonding of this composite wafer stack to the L1 Intelligent Substrate, achieving vertical power delivery and communication through Through-Silicon Vias.
+3. Finally, precise wafer-level optical alignment and permanent attachment of the fiber array to the grating couplers on the L1 layer.
+
+5. Key Innovations and Advantages
+
+5.1 Ternary Photonic-Native Computing
+
+· Unification of computing and communication medium as photons, eliminating photoelectric conversion overhead.
+· Ternary logic offers higher information density than binary, proving more efficient for processing balanced data (e.g., positive/negative weights in AI).
+
+5.2 Micro-LED as Computing Element
+
+· Integration of light source and computing unit simplifies the architecture drastically.
+· Nanosecond-scale switching speed of micro-LEDs provides a physical basis for ultra-fast parallel computing.
+
+5.3 Heterogeneous Stacking
+
+· Breaks the limitation of "silicon for everything," allowing the selection of the most suitable material for each function (Si for control, GaN for light emission, PCM for memory).
+· 3D stacking drastically shortens interconnect lengths, achieving unprecedented bandwidth and energy efficiency.
+
+5.4 Intrinsic Security
+
+· The computational process occurs internally via light, emitting no electromagnetic radiation, providing inherent resistance to side-channel attacks.
+
+6. Performance Targets
+
+· Computational Efficiency: > 100 TOPS/W (Ternary Operations Per Second per Watt)
+· Computational Density: > 10 TOPS/mm²
+· Inter-Layer Bandwidth: > 10 Tbps/mm²
+· Memory Access Latency: < 10 ns
+· Thermal Density: < 0.5 W/cm² (with microchannel cooling)
+
+7. Roadmap
+
+· 2026: Demonstrate a test chip containing 1K ternary photonic computing units; complete the basic toolchain.
+· 2027: Scale computing units to 1M; demonstrate a full "4+1" prototype system; open-source all hardware designs.
+· 2028+: Promote industry chain maturity towards commercialization; explore hybrid architectures with quantum computing units.
+
+8. Conclusion
+
+The "4+1 Heterogeneous Stacked Ternary LED-Style Wafer Fabrication Process" described in this report is not an incremental improvement over existing technology, but a complete paradigm shift. It aims to build a future computing system that is light-speed, three-dimensionally integrated, and intrinsically intelligent. We believe this represents a highly promising new path forward in the post-Moore era.
+
+---
+
+Appendices
+
+· Appendix A: Ternary Optical Logic Truth Tables and Gate Circuit Designs
+· Appendix B: Detailed GaN Micro-LED Epitaxial Growth Parameters
+· Appendix C: Heterogeneous Wafer Bonding Process Design Kit
+
+---
+
+This technical report and all associated design files are released under the CERN Open Hardware License Version 2 - Permissive. Commercial implementation requires appropriate attribution to LIWEI LI as the original inventor.
