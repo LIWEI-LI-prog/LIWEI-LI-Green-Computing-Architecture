@@ -146,9 +146,6 @@ pytest tests/ --cov=src --cov-report=html
 
 ### 在线运行
 
-```bash
-
-
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
 cd LIWEI-LI-Green-Computing-Architecture
@@ -165,9 +162,6 @@ from src.ternary import TernaryLogic
 result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
 print(f"结果: {result}")
 
-"""
-基础测试
-"""
 
 from src.ternary import TernaryLogic
 
