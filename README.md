@@ -92,6 +92,98 @@ pytest tests/test_ternary.py -v
 # 带覆盖率的测试
 pytest tests/ --cov=src --cov-report=html
 
+## 🚀 快速体验
+
+### 在线运行
+1. 点击上方 "Code" → "Codespaces" → 创建Codespace
+2. 在终端运行：
+```bash
+python examples/simple_demo.py
+
+# 1. 克隆项目
+git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
+cd LIWEI-LI-Green-Computing-Architecture
+
+# 2. 安装依赖（可选）
+pip install numpy
+
+# 3. 运行演示
+python examples/simple_demo.py
+
+from src.ternary import TernaryLogic
+
+# 体验三元计算
+result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
+print(f"结果: {result}")
+
+Green-Computing-Architecture/
+├── src/                    # 源代码
+│   └── ternary.py        # 三元逻辑核心
+├── examples/              # 示例代码
+│   └── simple_demo.py    # 快速演示
+├── docs/                  # 文档目录
+├── tests/                 # 测试目录
+└── 各种文档文件           # 技术文档
+
+
+## **第三步：可选 - 添加一个测试文件**
+
+如果要添加测试，创建 `tests/test_basic.py`：
+
+```python
+"""
+基础测试
+"""
+
+from src.ternary import TernaryLogic
+
+def test_ternary_logic():
+    """测试三元逻辑"""
+    assert TernaryLogic.AND(1, 1) == 1
+    assert TernaryLogic.AND(1, 0) == 0
+    assert TernaryLogic.AND(1, -1) == -1
+    
+    assert TernaryLogic.OR(-1, -1) == -1
+    assert TernaryLogic.OR(-1, 0) == 0
+    assert TernaryLogic.OR(-1, 1) == 1
+    
+    assert TernaryLogic.NOT(1) == -1
+    assert TernaryLogic.NOT(0) == 0
+    assert TernaryLogic.NOT(-1) == 1
+
+def test_conversion():
+    """测试值转换"""
+    assert TernaryLogic.to_ternary(0.8) == 1
+    assert TernaryLogic.to_ternary(0.2) == 0
+    assert TernaryLogic.to_ternary(-0.5) == -1
+
+if __name__ == "__main__":
+    test_ternary_logic()
+    test_conversion()
+    print("✅ 所有测试通过!")
+
+LIWEI-LI-Green-Computing-Architecture/
+├── src/
+│   └── ternary.py              ← 新增！三元逻辑核心
+├── examples/
+│   └── simple_demo.py          ← 新增！演示文件
+├── tests/
+│   └── test_basic.py           ← 可选！测试文件
+├── docs/
+├── scripts/
+├── config/
+├── requirements.txt            ← 新增！依赖文件
+├── README.md                   ← 已更新！
+├── README_ZH.md
+├── Whitepaper.md
+├── Technical-Report.md
+├── Vision.md
+├── Getting_Started.md
+├── Contributing.md
+├── code_of_conduct.md
+├── LICENSE
+└── LICENSE_CERN_OHL_P.v2
+
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/Green-Computing-Arch
 **Status Legend:**
