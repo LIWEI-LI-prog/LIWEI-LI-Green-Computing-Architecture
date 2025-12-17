@@ -58,7 +58,42 @@ LIWEI-LI-Green-Computing-Architecture/
 ├── 🌐 README.md                     # Main Project Documentation (English)
 └── 🌐 README_ZH.md                  # Chinese Documentation
 ```
+## 💻 代码示例
 
+### 基本使用
+```python
+from src.core.ternary_computing import TernaryLogic, TernaryState
+
+# 创建三元逻辑实例
+logic = TernaryLogic()
+
+# 执行三元运算
+result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
+print(f"TRUE AND UNKNOWN = {result}")
+
+from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
+
+# 创建架构实例
+arch = FourPlusOneArchitecture()
+
+# 分析性能
+performance = arch.calculate_performance()
+print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
+
+# 生成技术报告
+print(arch.generate_technical_summary())
+
+# 运行所有测试
+pytest tests/
+
+# 运行特定测试
+pytest tests/test_ternary.py -v
+
+# 带覆盖率的测试
+pytest tests/ --cov=src --cov-report=html
+
+# 1. 克隆项目
+git clone https://github.com/LIWEI-LI/Green-Computing-Arch
 **Status Legend:**
 - 🟢 **Active Development** - Ready for contributions
 - 🟡 **Planning Phase** - In design, discussions welcome  
