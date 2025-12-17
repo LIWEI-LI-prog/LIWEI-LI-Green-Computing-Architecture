@@ -27,3 +27,8 @@ ipykernel>=6.0.0
 # 可选：性能分析
 memory-profiler>=0.60.0
 line-profiler>=4.0.0
+
+# Green Computing Architecture 依赖
+# 保持极简，只有必要的包
+
+numpy>=1.21.0
