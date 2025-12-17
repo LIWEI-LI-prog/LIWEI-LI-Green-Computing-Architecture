@@ -145,8 +145,7 @@ pytest tests/ --cov=src --cov-report=html
 ## 🚀 快速体验
 
 ### 在线运行
-1. 点击上方 "Code" → "Codespaces" → 创建Codespace
-2. 在终端运行：
+
 ```bash
 python examples/simple_demo.py
 
