@@ -33,35 +33,85 @@ We welcome contributors from all backgrounds!
 3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
 4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
 
-## 📁 Project Structure
-
-```
 LIWEI-LI-Green-Computing-Architecture/
 │
-├── 📖 Documentation/                 # Technical Documentation & Whitepapers
-│   └── Fabrication_Technology_Report.md  # Manufacturing Process Report
+├── 📖 docs/                          # Documentation
+│   ├── Whitepaper.md                 # Technical whitepaper
+│   ├── Technical-Report.md           # Detailed technical report
+│   ├── Vision.md                     # Project vision and roadmap
+│   └── Getting_Started.md            # Getting started guide
 │
-├── 💻 Hardware/                     # Hardware Design Files
-│   ├── stdcell/                     # Ternary Standard Cell Library
-│   ├── pdk/                         # Photonic Component PDK  
-│   └── 3d_kit/                      # 3D Integration Solutions
+├── 💻 src/                          # Source code
+│   ├── core/
+│   │   ├── ternary_logic.py         # Ternary logic operations
+│   │   └── photonic_interconnect.py # Photonic simulation
+│   ├── architecture/
+│   │   └── fourplus1_architecture.py # 4+1 architecture implementation
+│   └── utils/
+│       └── converters.py            # Data conversion utilities
 │
-├── 🛠️ Software/                    # Software Toolchain
-│   ├── toolchain/                   # TRISC-V Toolchain
-│   ├── simulator/                   # Ternary System Simulator
-│   └── gem5/                        # Architecture Simulator Integration
+├── 🧪 tests/                        # Test suite
+│   ├── test_ternary.py              # Ternary logic tests
+│   ├── test_photonic.py             # Photonic interconnect tests
+│   └── test_architecture.py         # Architecture tests
 │
-├── 🤝 Community/                    # Community Resources
-│   └── CONTRIBUTING.md              # Contribution Guidelines
+├── 📊 examples/                     # Example code
+│   ├── simple_demo.py               # Basic demonstration
+│   ├── ternary_calculator.py        # Ternary calculator example
+│   └── performance_benchmark.py     # Performance benchmarking
+│
+├── 🔧 scripts/                      # Utility scripts
+│   ├── setup_environment.sh         # Environment setup
+│   ├── run_tests.sh                 # Test runner
+│   └── build_docs.sh                # Documentation builder
+│
+├── 📈 benchmarks/                   # Benchmark results
+│   └── performance_metrics.json     # Performance metrics
+│
+├── 🤝 community/                    # Community resources
+│   ├── CONTRIBUTING.md              # Contribution guidelines
+│   ├── code_of_conduct.md           # Community code of conduct
+│   └── community_guidelines.md      # Community participation guidelines
 │
 ├── 📄 LICENSE                       # Apache 2.0 License
-├── 🌐 README.md                     # Main Project Documentation (English)
-└── 🌐 README_ZH.md                  # Chinese Documentation
-```
+├── 📄 LICENSE_CERN_OHL_P.v2         # CERN Open Hardware License
+├── 📜 requirements.txt              # Python dependencies
+├── 🌐 README.md                     # Main documentation (English)
+└── 🌐 README_ZH.md                  # Chinese documentation
+
 ## 💻 代码示例
 
-### 基本使用
-```python
+from src.core.ternary_logic import TernaryLogic, TernaryState
+
+# Create ternary logic instance
+logic = TernaryLogic()
+
+# Perform ternary operations
+result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
+print(f"TRUE AND UNKNOWN = {result}")
+
+# More complex operations
+a = TernaryState.TRUE
+b = TernaryState.FALSE
+c = TernaryState.UNKNOWN
+
+ternary_result = logic.ternary_add(a, b, c)
+print(f"Ternary addition result: {ternary_result}")
+
+from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
+
+# Create architecture instance
+arch = FourPlusOneArchitecture()
+
+# Analyze performance
+performance = arch.analyze_performance()
+print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
+print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
+
+# Generate technical report
+report = arch.generate_technical_report()
+print(report.summary)
+
 from src.core.ternary_computing import TernaryLogic, TernaryState
 
 # 创建三元逻辑实例
