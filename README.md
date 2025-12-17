@@ -116,14 +116,7 @@ from src.ternary import TernaryLogic
 result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
 print(f"结果: {result}")
 
-Green-Computing-Architecture/
-├── src/                    # 源代码
-│   └── ternary.py        # 三元逻辑核心
-├── examples/              # 示例代码
-│   └── simple_demo.py    # 快速演示
-├── docs/                  # 文档目录
-├── tests/                 # 测试目录
-└── 各种文档文件           # 技术文档
+
 
 
 ## **第三步：可选 - 添加一个测试文件**
