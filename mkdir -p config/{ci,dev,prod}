@@ -1,0 +1,65 @@
+#!/bin/bash
+# Green Computing Architecture 项目设置脚本
+
+set -e
+
+echo "🔧 设置 Green Computing Architecture 项目"
+echo "=" * 60
+
+# 检查Python
+echo "检查Python环境..."
+python --version
+
+# 创建虚拟环境
+echo -e "\n创建虚拟环境..."
+if [ ! -d ".venv" ]; then
+    python -m venv .venv
+    echo "虚拟环境创建成功"
+else
+    echo "虚拟环境已存在"
+fi
+
+# 激活虚拟环境
+echo -e "\n激活虚拟环境..."
+if [[ "$OSTYPE" == "darwin"* ]] || [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    source .venv/bin/activate
+elif [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "win32" ]]; then
+    source .venv/Scripts/activate
+else
+    echo "警告: 未知操作系统 $OSTYPE，请手动激活虚拟环境"
+fi
+
+# 安装依赖
+echo -e "\n安装依赖..."
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# 运行测试
+echo -e "\n运行测试..."
+python -m pytest tests/ -v
+
+# 生成文档
+echo -e "\n生成文档..."
+if command -v pdoc &> /dev/null; then
+    pdoc --html src/ -o docs/api/ --force
+    echo "API文档生成成功"
+else
+    echo "pdoc未安装，跳过API文档生成"
+    echo "安装: pip install pdoc"
+fi
+
+echo -e "\n" "=" * 60
+echo "✅ 项目设置完成！"
+echo ""
+echo "下一步："
+echo "1. 探索示例: python examples/demo/architecture_demo.py"
+echo "2. 查看文档: docs/"
+echo "3. 运行所有测试: pytest tests/"
+echo "4. 贡献代码: 查看 CONTRIBUTING.md"
+echo ""
+echo "📚 重要文件:"
+echo "   README.md        - 项目主页"
+echo "   Whitepaper.md    - 技术白皮书"
+echo "   Vision.md        - 项目愿景"
+echo "   LICENSE          - Apache 2.0许可证"
+echo "=" * 60
