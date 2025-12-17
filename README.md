@@ -147,7 +147,7 @@ pytest tests/ --cov=src --cov-report=html
 ### 在线运行
 
 ```bash
-python examples/simple_demo.py
+
 
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
