@@ -116,9 +116,6 @@ from src.ternary import TernaryLogic
 result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
 print(f"结果: {result}")
 
-
-
-
 """
 基础测试
 """
@@ -150,7 +147,10 @@ if __name__ == "__main__":
     test_conversion()
     print("✅ 所有测试通过!")
 
+
 LIWEI-LI-Green-Computing-Architecture/
+
+
 ├── src/
 │   └── ternary.py              ← 新增！三元逻辑核心
 ├── examples/
@@ -172,12 +172,16 @@ LIWEI-LI-Green-Computing-Architecture/
 ├── LICENSE
 └── LICENSE_CERN_OHL_P.v2
 
+
+
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/Green-Computing-Arch
 **Status Legend:**
 - 🟢 **Active Development** - Ready for contributions
 - 🟡 **Planning Phase** - In design, discussions welcome  
 - 🔵 **Foundation Ready** - Basic framework established
+
+
 
 ## 🙋 Join the Movement
 
