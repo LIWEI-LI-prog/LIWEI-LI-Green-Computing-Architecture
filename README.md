@@ -79,6 +79,23 @@ LIWEI-LI-Green-Computing-Architecture/
 ├── 🌐 README.md                     # Main documentation (English)
 └── 🌐 README_ZH.md                  # Chinese documentation
 
+from src.core.ternary_logic import TernaryLogic, TernaryState
+
+# Create ternary logic instance
+logic = TernaryLogic()
+
+# Perform ternary operations
+result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
+print(f"TRUE AND UNKNOWN = {result}")
+
+# More complex operations
+a = TernaryState.TRUE
+b = TernaryState.FALSE
+c = TernaryState.UNKNOWN
+
+ternary_result = logic.ternary_add(a, b, c)
+print(f"Ternary addition result: {ternary_result}")
+
 ## 💻 代码示例
 
 from src.core.ternary_logic import TernaryLogic, TernaryState
@@ -97,6 +114,52 @@ c = TernaryState.UNKNOWN
 
 ternary_result = logic.ternary_add(a, b, c)
 print(f"Ternary addition result: {ternary_result}")
+
+from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
+
+# Create architecture instance
+arch = FourPlusOneArchitecture()
+
+# Analyze performance
+performance = arch.analyze_performance()
+print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
+print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
+
+# Generate technical report
+report = arch.generate_technical_report()
+print(report.summary)
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run demo
+python examples/simple_demo.py
+
+# 1. Clone the project
+git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
+cd LIWEI-LI-Green-Computing-Architecture
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run tests
+python -m pytest tests/ -v
+
+# 4. Run demo
+python examples/simple_demo.py
+
+# Run all tests
+pytest tests/
+
+# Run specific test with verbose output
+pytest tests/test_ternary.py -v
+
+# Run tests with coverage report
+pytest tests/ --cov=src --cov-report=html
+
+# Run performance benchmarks
+python examples/performance_benchmark.py
+
 
 from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
 
