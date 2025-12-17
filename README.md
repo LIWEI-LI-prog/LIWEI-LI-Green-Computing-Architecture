@@ -33,52 +33,6 @@ We welcome contributors from all backgrounds!
 3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
 4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
 
-LIWEI-LI-Green-Computing-Architecture/
-│
-├── 📖 docs/                          # Documentation
-│   ├── Whitepaper.md                 # Technical whitepaper
-│   ├── Technical-Report.md           # Detailed technical report
-│   ├── Vision.md                     # Project vision and roadmap
-│   └── Getting_Started.md            # Getting started guide
-│
-├── 💻 src/                          # Source code
-│   ├── core/
-│   │   ├── ternary_logic.py         # Ternary logic operations
-│   │   └── photonic_interconnect.py # Photonic simulation
-│   ├── architecture/
-│   │   └── fourplus1_architecture.py # 4+1 architecture implementation
-│   └── utils/
-│       └── converters.py            # Data conversion utilities
-│
-├── 🧪 tests/                        # Test suite
-│   ├── test_ternary.py              # Ternary logic tests
-│   ├── test_photonic.py             # Photonic interconnect tests
-│   └── test_architecture.py         # Architecture tests
-│
-├── 📊 examples/                     # Example code
-│   ├── simple_demo.py               # Basic demonstration
-│   ├── ternary_calculator.py        # Ternary calculator example
-│   └── performance_benchmark.py     # Performance benchmarking
-│
-├── 🔧 scripts/                      # Utility scripts
-│   ├── setup_environment.sh         # Environment setup
-│   ├── run_tests.sh                 # Test runner
-│   └── build_docs.sh                # Documentation builder
-│
-├── 📈 benchmarks/                   # Benchmark results
-│   └── performance_metrics.json     # Performance metrics
-│
-├── 🤝 community/                    # Community resources
-│   ├── CONTRIBUTING.md              # Contribution guidelines
-│   ├── code_of_conduct.md           # Community code of conduct
-│   └── community_guidelines.md      # Community participation guidelines
-│
-├── 📄 LICENSE                       # Apache 2.0 License
-├── 📄 LICENSE_CERN_OHL_P.v2         # CERN Open Hardware License
-├── 📜 requirements.txt              # Python dependencies
-├── 🌐 README.md                     # Main documentation (English)
-└── 🌐 README_ZH.md                  # Chinese documentation
-
 from src.core.ternary_logic import TernaryLogic, TernaryState
 
 # Create ternary logic instance
@@ -252,33 +206,6 @@ if __name__ == "__main__":
     test_ternary_logic()
     test_conversion()
     print("✅ 所有测试通过!")
-
-
-LIWEI-LI-Green-Computing-Architecture/
-
-
-├── src/
-│   └── ternary.py              ← 新增！三元逻辑核心
-├── examples/
-│   └── simple_demo.py          ← 新增！演示文件
-├── tests/
-│   └── test_basic.py           ← 可选！测试文件
-├── docs/
-├── scripts/
-├── config/
-├── requirements.txt            ← 新增！依赖文件
-├── README.md                   ← 已更新！
-├── README_ZH.md
-├── Whitepaper.md
-├── Technical-Report.md
-├── Vision.md
-├── Getting_Started.md
-├── Contributing.md
-├── code_of_conduct.md
-├── LICENSE
-└── LICENSE_CERN_OHL_P.v2
-
-
 
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/Green-Computing-Arch
