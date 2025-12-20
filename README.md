@@ -1,226 +1,68 @@
-# LIWEI LI Green Computing Architecture 🌱
+# LIWEI LI Green Computing Architecture
 
-[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
-[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+**Language**: **English** | [中文](./README_ZH.md)
 
-**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+A revolutionary open-source computing architecture that leverages **ternary logic** and **photonic interconnects** to break through the energy and bandwidth walls.
 
 ---
 
-## 🚀 The Vision
+## 📖 Overview
 
-We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
+The "4+1" Full-Stack Ternary Green Computing Architecture proposes a post-Moore's Law computing paradigm. It aims to achieve orders-of-magnitude improvement in energy efficiency from the physical ground up through the co-design of **ternary logic devices**, **on-chip optoelectronic hybrid interconnects**, and **3D heterogeneous integration**.
 
-## 💡 Core Innovation: "4+1" Architecture
+**Core Pivot (Latest Update)**: This architecture has officially evolved from its early silicon CMOS-based silicon photonics approach to a disruptive path based on **FMOS (Flexible Metal-Oxide Semiconductor)** and **LED wafer integration**. This pivot aims to leverage the ultra-low leakage characteristics of oxide semiconductors and the mature manufacturing ecosystem of the display industry, exploring a more sustainable and cost-effective route to high-efficiency computing.
 
-### 🧠 Ternary Computing
-- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
-- **Why**: Higher information density, reducing computational complexity
-- **Example**: Ternary full adder uses 37.5% fewer gates
+## 🏗️ Architectural Core ("4+1" Stack)
 
-### 🔦 Photonic Interconnects  
-- **What**: Using light instead of electricity for data movement
-- **Why**: Eliminates "memory wall" and "bandwidth wall"
+The architecture employs a vertical stacking design, from top to bottom:
 
-## 🎯 Get Started
+1.  **Computing Layer (L4)**: Implements ternary logic and compute-in-memory units using **FMOS** processes (e.g., IGZO), targeting picowatt-level static power consumption.
+2.  **Optoelectronic Conversion Layer (L3)**: Integrates **GaN-based micro-LED source arrays** and photodetectors to enable efficient electrical-to-optical and optical-to-electrical signal conversion.
+3.  **Optical Routing Layer (L2)**: A low-loss optical waveguide network for optical signal distribution.
+4.  **Base Electrical Interconnect Layer (L1)**: High-frequency electrical interconnects and chip I/O interfaces.
+5.  **"+1" Stress Buffer Layer**: A conceptual layer intended to manage thermal and mechanical stress in heterogeneous integration.
 
-We welcome contributors from all backgrounds!
+## ⚙️ Technical Specifications & Goals
 
-**Quick Start:**
-1. ⭐ **Star this repo** to show your support
-2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
-3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
-4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
+| Component / Metric | FMOS-LED Path Target | Notes / Comparison |
+| :--- | :--- | :--- |
+| **Logic Foundation** | Ternary Logic (-Vdd, 0, +Vdd) | Based on FMOS device characteristics |
+| **On-Chip Light Source** | Miniaturized GaN LED (450nm Blue Light) | A non-traditional approach vs. infrared silicon photonics |
+| **Optical Interconnect Energy Efficiency** | < 50 fJ/bit | **A highly challenging target** |
+| **Projected System Energy Efficiency Gain** | Potential for order-of-magnitude improvement over conventional architectures | Refer to comparative analysis in the technical report |
+| **Manufacturing Process** | Low-temperature oxide semiconductor process compatible with display industry | Decoupled from standard CMOS processing |
 
-from src.core.ternary_logic import TernaryLogic, TernaryState
+## 📂 Open-Source Contents
 
-# Create ternary logic instance
-logic = TernaryLogic()
+This project is open-sourced under the **CERN Open Hardware Licence Version 2 - Permissive**. Currently available contents include:
+- **Design Documentation**: Technical architecture report, whitepaper.
+- **Design Specifications**: Initial cell library design specifications, optoelectronic interface standards.
+- **Simulation Models**: Ternary logic simulation models, system-level power evaluation scripts.
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
+### Technical Challenges and Clarifications (Important)
 
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
+To uphold the rigor of our open-source work, we explicitly outline the key challenges and data premises currently associated with this architecture:
 
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
+1.  **Optical Interconnect Scheme:** The use of 450nm blue light for on-chip communication faces inherent challenges due to high absorption loss in silicon-based materials. Demonstrating its feasibility and developing low-loss routing solutions are currently our core research topics.
+2.  **Interpretation of Performance Data:** The projected "15-20x system energy efficiency improvement" is a conceptual extrapolation based on a comparison with a **representative** traditional GPU benchmark. This data is intended to illustrate architectural potential and does not reflect measured results from a physical implementation.
+3.  **Process Integration:** The heterogeneous integration of **FMOS** and LED wafers represents an entirely new manufacturing flow. Its reliability and production yield currently await verification.
 
-## 💻 代码示例
+We welcome community discussion and collaboration on these points.
 
-from src.core.ternary_logic import TernaryLogic, TernaryState
+## 📅 Development Roadmap
 
-# Create ternary logic instance
-logic = TernaryLogic()
+1.  **Phase 1 (Feasibility Study)**: Validate the key process feasibility of FMOS-driven micro-LEDs.
+2.  **Phase 2 (Prototyping)**: Demonstrate a small-scale ternary computing array with on-chip optical interconnects.
+3.  **Phase 3 (Integration)**: Complete a full "4+1" four-layer stacked prototype system.
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
+## 👥 Contributing
 
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
+We welcome contributions in the following areas:
+- Metal-oxide semiconductor device modeling
+- Optoelectronic hybrid integration design and simulation
+- 3D integration and thermo-mechanical stress analysis
+- Architecture evaluation and benchmarking
 
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
+## 📜 License
 
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
-
-# 1. Clone the project
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-python -m pytest tests/ -v
-
-# 4. Run demo
-python examples/simple_demo.py
-
-# Run all tests
-pytest tests/
-
-# Run specific test with verbose output
-pytest tests/test_ternary.py -v
-
-# Run tests with coverage report
-pytest tests/ --cov=src --cov-report=html
-
-# Run performance benchmarks
-python examples/performance_benchmark.py
-
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. 安装依赖（可选）
-pip install numpy
-
-# 3. 运行演示
-python examples/simple_demo.py
-
-from src.ternary import TernaryLogic
-
-# 体验三元计算
-result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
-print(f"结果: {result}")
-
-
-from src.ternary import TernaryLogic
-
-def test_ternary_logic():
-    """测试三元逻辑"""
-    assert TernaryLogic.AND(1, 1) == 1
-    assert TernaryLogic.AND(1, 0) == 0
-    assert TernaryLogic.AND(1, -1) == -1
-    
-    assert TernaryLogic.OR(-1, -1) == -1
-    assert TernaryLogic.OR(-1, 0) == 0
-    assert TernaryLogic.OR(-1, 1) == 1
-    
-    assert TernaryLogic.NOT(1) == -1
-    assert TernaryLogic.NOT(0) == 0
-    assert TernaryLogic.NOT(-1) == 1
-
-def test_conversion():
-    """测试值转换"""
-    assert TernaryLogic.to_ternary(0.8) == 1
-    assert TernaryLogic.to_ternary(0.2) == 0
-    assert TernaryLogic.to_ternary(-0.5) == -1
-
-if __name__ == "__main__":
-    test_ternary_logic()
-    test_conversion()
-    print("✅ 所有测试通过!")
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/Green-Computing-Arch
-**Status Legend:**
-- 🟢 **Active Development** - Ready for contributions
-- 🟡 **Planning Phase** - In design, discussions welcome  
-- 🔵 **Foundation Ready** - Basic framework established
-
-
-
-## 🙋 Join the Movement
-
-This is more than code - it's a collective effort to redefine computing foundations.
-
-**Your curiosity and expertise are our most valuable resources.**
-
----
-*Architectural Concept & Open-Source Release by LIWEI LI*
+The hardware design of this project is licensed under **CERN OHL v2**. Documentation is licensed under **Creative Commons Attribution 4.0 International**.
