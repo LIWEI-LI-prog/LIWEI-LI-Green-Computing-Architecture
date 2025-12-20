@@ -163,6 +163,13 @@ pytest tests/ --cov=src --cov-report=html
 
 ### 在线运行
 
+**转化为具体研究问题：**
+
+1.  **蓝光波导损耗课题**：如何为 450nm 蓝光设计与制造片上低损耗光波导？目标：在硅或氮化硅衬底上实现 **< 10 dB/cm** 的传播损耗。需研究新型波导截面几何与包层材料。
+2.  **FMOS驱动速度课题**：如何提升金属氧化物半导体（如 IGZO）的迁移率与电流驱动能力，以实现对微型LED的 **>1 GHz** 直接强度调制？需探索新材料栈（如多层氧化物）与器件结构。
+3.  **异质集成热预算课题**：在将 GaN LED 晶圆与 FMOS 晶圆进行键合时，如何将整个工艺流程的最高温度控制在 **< 250°C** 以下，以避免下层 FMOS 器件性能退化？需开发超低温键合与金属化工艺。
+4.  **三元逻辑实现课题**：如何在 FMOS 器件中物理实现稳定、可靠的三元逻辑态（-Vdd, 0, +Vdd）？需设计创新的电路架构，并通过 SPICE 仿真与测试芯片进行验证。
+
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
 cd LIWEI-LI-Green-Computing-Architecture
