@@ -1,226 +1,65 @@
-# LIWEI LI Green Computing Architecture 🌱
+# LIWEI LI 绿色计算架构
 
-[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
-[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+**语言**：[English](#liweli-green-computing-architecture) | **中文**
 
-**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+一个革命性的开源计算架构，利用**三元逻辑**与**光电混合互连**，旨在突破传统计算的能效与带宽墙。
 
 ---
 
-## 🚀 The Vision
+### 📖 概述
 
-We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
+“4+1”全栈三元绿色计算架构提出了一种后摩尔时代的计算范式。它通过协同设计**三元逻辑器件**、**片上光电混合互连**与**3D异构集成**，致力于从物理底层实现数量级的能效提升。
 
-## 💡 Core Innovation: "4+1" Architecture
+**核心转向（最新）**：本架构已从早期基于硅基CMOS的硅光子方案，正式演进为基于 **FMOS（柔性金属氧化物半导体）** 与 **LED晶圆集成** 的颠覆性路径。这一转向旨在利用氧化物半导体的超低漏电特性与显示产业成熟的制造生态，探索一条更可持续、更具成本效益的高能效计算道路。
 
-### 🧠 Ternary Computing
-- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
-- **Why**: Higher information density, reducing computational complexity
-- **Example**: Ternary full adder uses 37.5% fewer gates
+### 🏗️ 架构核心 (“4+1” Stack)
 
-### 🔦 Photonic Interconnects  
-- **What**: Using light instead of electricity for data movement
-- **Why**: Eliminates "memory wall" and "bandwidth wall"
+架构采用垂直堆叠设计，自顶向下包括：
 
-## 🎯 Get Started
+1.  **计算层 (L4)**: 采用 **FMOS** 工艺（如IGZO）实现三元逻辑与存算一体单元，目标是实现皮瓦级静态功耗。
+2.  **光电转换层 (L3)**: 集成 **GaN基微型LED光源阵列**与探测器，实现高效的电-光/光-电信号转换。
+3.  **光路由层 (L2)**: 由低损耗光波导构成的光信号分发网络。
+4.  **基础电互连层 (L1)**: 高频电互连与芯片输入输出接口。
+5.  **“+1”应力缓冲层**: 用于管理异质集成中的热应力与机械应力（概念层）。
 
-We welcome contributors from all backgrounds!
+### ⚙️ 技术规格与目标
 
-**Quick Start:**
-1. ⭐ **Star this repo** to show your support
-2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
-3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
-4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
+| 项目 | FMOS-LED 路径目标 | 备注/对比 |
+| :--- | :--- | :--- |
+| **逻辑基础** | 三元逻辑 (-Vdd, 0, +Vdd) | 基于FMOS器件特性 |
+| **片上光源** | 微缩化GaN LED (450nm蓝光) | 非传统红外硅光方案 |
+| **光互连能效** | < 50 fJ/bit | **极具挑战性的目标** |
+| **系统能效提升** | 较传统架构有数量级提升潜力 | 详见报告中的对比分析 |
+| **制造工艺** | 显示产业兼容的低温氧化物半导体工艺 | 与标准CMOS工艺解耦 |
 
-from src.core.ternary_logic import TernaryLogic, TernaryState
+### 📂 开源内容
 
-# Create ternary logic instance
-logic = TernaryLogic()
+本项目在 **CERN 开放硬件许可协议第二版 - 宽松型** 下开源，目前包括：
+- **设计文档**：架构技术报告、白皮书。
+- **设计规范**：初始单元库设计规范、光电接口标准。
+- **仿真模型**：三元逻辑仿真模型、系统级功耗评估脚本。
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
+### 🚧 技术挑战与澄清（重要）
 
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
+为保持开源工作的严谨性，我们明确当前架构面临的**关键挑战**与**数据前提**：
 
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
+1.  **光互连方案**：采用 **450nm蓝光**进行片上通信面临硅基材料吸收损耗大的固有挑战，其可行性与低损耗路由方案是核心研究课题之一。
+2.  **性能数据解读**：报告中“**15-20倍系统能效提升**”的目标，是基于与一个**特定的、未详细说明的传统GPU基准**进行的概念性推算。该数据旨在描述架构潜力，**并非已实现的实测结果**。
+3.  **工艺集成**：FMOS与LED晶圆的异质集成是全新的制造流程，其可靠性与量产良率有待验证。
 
-## 💻 代码示例
+我们欢迎社区就此挑战进行探讨与合作。
 
-from src.core.ternary_logic import TernaryLogic, TernaryState
+### 📅 研发路线图
+1.  **阶段一（预研）**: 验证FMOS驱动微型LED的关键工艺可行性。
+2.  **阶段二（原型）**: 实现小规模三元计算阵列与片上光互连演示芯片。
+3.  **阶段三（集成）**: 完成完整的“4+1”四层堆叠原型系统。
 
-# Create ternary logic instance
-logic = TernaryLogic()
+### 👥 参与贡献
+我们欢迎在以下领域的贡献：
+- 金属氧化物半导体器件建模
+- 光电混合集成设计与仿真
+- 三维集成与热应力分析
+- 架构评估与基准测试
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
-
-# 1. Clone the project
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-python -m pytest tests/ -v
-
-# 4. Run demo
-python examples/simple_demo.py
-
-# Run all tests
-pytest tests/
-
-# Run specific test with verbose output
-pytest tests/test_ternary.py -v
-
-# Run tests with coverage report
-pytest tests/ --cov=src --cov-report=html
-
-# Run performance benchmarks
-python examples/performance_benchmark.py
-
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. 安装依赖（可选）
-pip install numpy
-
-# 3. 运行演示
-python examples/simple_demo.py
-
-from src.ternary import TernaryLogic
-
-# 体验三元计算
-result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
-print(f"结果: {result}")
-
-
-from src.ternary import TernaryLogic
-
-def test_ternary_logic():
-    """测试三元逻辑"""
-    assert TernaryLogic.AND(1, 1) == 1
-    assert TernaryLogic.AND(1, 0) == 0
-    assert TernaryLogic.AND(1, -1) == -1
-    
-    assert TernaryLogic.OR(-1, -1) == -1
-    assert TernaryLogic.OR(-1, 0) == 0
-    assert TernaryLogic.OR(-1, 1) == 1
-    
-    assert TernaryLogic.NOT(1) == -1
-    assert TernaryLogic.NOT(0) == 0
-    assert TernaryLogic.NOT(-1) == 1
-
-def test_conversion():
-    """测试值转换"""
-    assert TernaryLogic.to_ternary(0.8) == 1
-    assert TernaryLogic.to_ternary(0.2) == 0
-    assert TernaryLogic.to_ternary(-0.5) == -1
-
-if __name__ == "__main__":
-    test_ternary_logic()
-    test_conversion()
-    print("✅ 所有测试通过!")
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/Green-Computing-Arch
-**Status Legend:**
-- 🟢 **Active Development** - Ready for contributions
-- 🟡 **Planning Phase** - In design, discussions welcome  
-- 🔵 **Foundation Ready** - Basic framework established
-
-
-
-## 🙋 Join the Movement
-
-This is more than code - it's a collective effort to redefine computing foundations.
-
-**Your curiosity and expertise are our most valuable resources.**
-
----
-*Architectural Concept & Open-Source Release by LIWEI LI*
+### 📜 许可证
+本项目硬件设计采用 **CERN OHL v2** 许可。文档部分采用 **Creative Commons Attribution 4.0** 许可。
