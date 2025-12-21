@@ -106,17 +106,9 @@ standards/interfaces/ - 硬件接口规范
 · 禁止军事用途
 · 遵守出口管制
 
-联系方式
-
-· 授权咨询: licensing@green-architecture.org
-· 技术支持: support@green-architecture.org
-· 法律事务: legal@green-architecture.org
-
 ---
 
 © 2025 LIWEI LI. 保留所有权利。
 本文件最后更新: 2025年12月21日
 
 ---
-
-这个版本可以直接复制粘贴到您的README.de文件中。需要我进一步调整任何部分吗？
