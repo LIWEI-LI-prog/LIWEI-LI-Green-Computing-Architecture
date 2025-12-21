@@ -38,17 +38,6 @@ from src.core.ternary_logic import TernaryLogic, TernaryState
 # Create ternary logic instance
 logic = TernaryLogic()
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
 
 ## 💻 代码示例
 
@@ -57,37 +46,8 @@ from src.core.ternary_logic import TernaryLogic, TernaryState
 # Create ternary logic instance
 logic = TernaryLogic()
 
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
 # Create architecture instance
 arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
 
 # 1. Clone the project
 git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
@@ -124,44 +84,6 @@ arch = FourPlusOneArchitecture()
 performance = arch.analyze_performance()
 print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
 print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
 
 # 1. 克隆项目
 git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
