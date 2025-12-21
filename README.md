@@ -1,5 +1,26 @@
 🔐 LIWEI LI Green Computing Architecture - 技术共享边界说明 (README.de)
 
+# Green Computing Architecture (FMOS-T / 4+1 BTA)
+
+> The next-generation 3D optoelectronic balanced ternary computing architecture.
+
+## 📖 Documentation
+- **[English](README.md)** (this file)
+- **[Deutsch/German](README.de.md)** - Detailed technical sharing boundaries and commercial licensing
+
+## 🚀 Quick Start
+1. Clone the repository
+2. Explore the architecture docs in `docs/`
+3. Run the behavioral simulator in `simulator/`
+4. Check examples in `examples/`
+
+## 🔐 Commercial Licensing
+For access to RTL, PDK, production rights, please contact:
+- **Licensing**: licensing@green-architecture.org
+- **Technical**: support@green-architecture.org
+
+© 2025 LIWEI LI. All rights reserved.
+
 🎯 开放共享的内容
 
 架构文档与规范
@@ -93,11 +114,16 @@ standards/interfaces/ - 硬件接口规范
 ⚠️ 法律声明
 
 知识产权所有权
+### 专利授权声明
 
-· 所有专利归 LIWEI LI 所有
-· 所有商业秘密受法律保护
-· 未授权禁止商业使用
-· 保留所有法律追索权利
+1. **开源部分专利授权**
+   贡献者（LIWEI LI）在此授予您一项全球性的、免许可费的、非独占的、不可再授权的专利许可，仅限**为使用、复制、修改、分发本开源软件（即本仓库中依据Apache 2.0许可证授权的所有内容）之目的**，实施其所拥有的、覆盖该开源软件的必不可少专利权利要求。
+
+2. **授权明确排除**
+   上述授权**明确排除**任何实施本文件`🚫 不共享的专有技术`章节中所列内容的权利。获取此类权利需另行签署商业许可协议。
+
+3. **专利 retaliation 条款**
+   若您或您的关联实体就本开源软件对贡献者发起专利侵权诉讼，则本条款1项下授予您的所有专利许可将自动终止。
 
 使用限制
 
