@@ -1,226 +1,101 @@
-# LIWEI LI Green Computing Architecture 🌱
+# 🔐 LIWEI LI 绿色计算架构 - 技术共享边界说明
 
-[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
-[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## 🚀 超越二进制：原生三元AI计算架构
 
-**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+**FMOS-T / 4+1 平衡三元架构** 并非对现有计算的优化，而是一次物理范式转移。本架构在硬件层面**原生支持 `-1, 0, +1` 三态逻辑**，与当前AI研究中最前沿的 **1.58-bit 大语言模型（如BitNet）的数学表示完美对应**。
+
+这意味着：
+- **消除模拟开销**：当GPU仍在用复杂电路模拟三元运算时，FMOS-T**硬件原生执行**，将理论能效直接转化为现实。
+- **突破信息密度瓶颈**：每个“Trit”携带约1.58比特信息，用更少的互连实现更高的数据吞吐，是克服“内存墙”的根本路径。
+- **重写能效规则**：基于铁电材料的非易失特性，实现近零静态功耗，为可持续的AI算力扩张提供基础。
+
+> **我们不出售芯片，我们提供实现下一代AI的物理定律。**
 
 ---
 
-## 🚀 The Vision
-
-We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
-
-## 💡 Core Innovation: "4+1" Architecture
-
-### 🧠 Ternary Computing
-- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
-- **Why**: Higher information density, reducing computational complexity
-- **Example**: Ternary full adder uses 37.5% fewer gates
-
-### 🔦 Photonic Interconnects  
-- **What**: Using light instead of electricity for data movement
-- **Why**: Eliminates "memory wall" and "bandwidth wall"
-
-## 🎯 Get Started
-
-We welcome contributors from all backgrounds!
-
-**Quick Start:**
-1. ⭐ **Star this repo** to show your support
-2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
-3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
-4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-## 💻 代码示例
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
-
-# 1. Clone the project
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-python -m pytest tests/ -v
-
-# 4. Run demo
-python examples/simple_demo.py
-
-# Run all tests
-pytest tests/
-
-# Run specific test with verbose output
-pytest tests/test_ternary.py -v
-
-# Run tests with coverage report
-pytest tests/ --cov=src --cov-report=html
-
-# Run performance benchmarks
-python examples/performance_benchmark.py
-
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. 安装依赖（可选）
-pip install numpy
-
-# 3. 运行演示
-python examples/simple_demo.py
-
-from src.ternary import TernaryLogic
-
-# 体验三元计算
-result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
-print(f"结果: {result}")
-
-
-from src.ternary import TernaryLogic
-
-def test_ternary_logic():
-    """测试三元逻辑"""
-    assert TernaryLogic.AND(1, 1) == 1
-    assert TernaryLogic.AND(1, 0) == 0
-    assert TernaryLogic.AND(1, -1) == -1
-    
-    assert TernaryLogic.OR(-1, -1) == -1
-    assert TernaryLogic.OR(-1, 0) == 0
-    assert TernaryLogic.OR(-1, 1) == 1
-    
-    assert TernaryLogic.NOT(1) == -1
-    assert TernaryLogic.NOT(0) == 0
-    assert TernaryLogic.NOT(-1) == 1
-
-def test_conversion():
-    """测试值转换"""
-    assert TernaryLogic.to_ternary(0.8) == 1
-    assert TernaryLogic.to_ternary(0.2) == 0
-    assert TernaryLogic.to_ternary(-0.5) == -1
-
-if __name__ == "__main__":
-    test_ternary_logic()
-    test_conversion()
-    print("✅ 所有测试通过!")
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/Green-Computing-Arch
-**Status Legend:**
-- 🟢 **Active Development** - Ready for contributions
-- 🟡 **Planning Phase** - In design, discussions welcome  
-- 🔵 **Foundation Ready** - Basic framework established
-
-
-
-## 🙋 Join the Movement
-
-This is more than code - it's a collective effort to redefine computing foundations.
-
-**Your curiosity and expertise are our most valuable resources.**
+## 🎯 开放共享的内容
+
+### 架构文档与规范 (`docs/`)
+- **核心优势阐述**：详细说明三元逻辑如何原生匹配 `{-1, 0, +1}` AI权重。
+- **指令集架构**：公开三元ISA，供学术研究与生态拓展。
+- **接口与协议**：确保生态互操作性的开放标准。
+
+### 开发工具与模拟器 (`tools/`, `simulator/`)
+- **行为级模拟器**：允许开发者体验在**原生三元硬件**上运行AI工作负载的潜在优势。
+- **编译器前端框架**：展示如何将高级语言（如PyTorch）映射至三元指令集。
+- **示例代码库**：包含经典算法与AI模型在三元架构上的实现示例。
+
+### 标准与接口 (`standards/`)
+- 所有推动生态建设的**开放性标准**。
 
 ---
-*Architectural Concept & Open-Source Release by LIWEI LI*
+
+## 🚫 不共享的专有技术（核心商业资产）
+
+以下是我们实现上述范式的**核心技术黑盒**，是商业授权的标的：
+
+1.  **硬件实现代码**
+    - 完整的RTL（Verilog/SystemVerilog）源代码
+    - 物理设计文件（GDSII, LEF/DEF）
+    - 综合与时序约束脚本
+
+2.  **制造工艺技术**
+    - 工艺设计包
+    - 铁电材料配方与工艺参数
+    - 3D光电堆叠的专有制造流程
+
+3.  **核心算法与“桥梁”**
+    - **二进制-三元转换核心电路**：连接传统世界与三元世界的关键IP。
+    - **三态算术单元**：高效实现 `-1， 0， +1` 运算的微架构。
+    - **光电调制与“零状态”检测**：定义与区分三态光信号的核心商业秘密。
+
+4.  **完整软件栈**
+    - 高度优化的**生产级编译器**后端
+    - 驱动与运行时库
+    - 性能分析与调试工具
+
+5.  **验证与良率数据**
+    - 完整的验证环境与测试向量
+    - 工艺特性化数据与良率提升方案
+
+---
+
+## 🔒 技术获取与商业授权途径
+
+| 访问级别 | 内容 | 核心价值 | 目标伙伴 |
+|:---|:---|:---|:---|
+| **开放级** | 全部开源内容 | 了解范式，学术研究，生态建设 | 研究者、学生、生态开发者 |
+| **评估级** | RTL评估包 + 仿真模型 | **量化验证**在特定AI负载上的性能与能效提升 | 有意向的战略合作伙伴 |
+| **开发级** | 完整RTL + 基础工具链 | 进行原型设计与早期软件适配 | 已确定合作意向的厂商 |
+| **生产级** | 全技术栈 + 持续支持 | **获得市场独占期**，将性能代差转化为产品优势 | 战略创始伙伴（如深度求索） |
+
+**生产级授权示例**：
+- **前期授权费**：€80M - €120M（获得3年**云端AI市场独占权**）
+- **特许权使用费**：芯片净售价的 **4% - 7%**（因节省的巨额运营成本而物有所值）
+- **合作模式**：联合定义软硬件标准，共享生态扩展收益。
+
+> *授权费用是对**跨越5-7年研发周期和数亿欧元试错成本**的节省。具体条款可根据战略合作的深度与广度进行定制。*
+
+---
+
+## ⚠️ 法律声明与专利授权
+
+### 知识产权所有权
+- 所有专利及商业秘密归 **LIWEI LI** 所有。
+- 本仓库开源部分依据 **Apache 2.0 许可证**授权。
+
+### 专利授权声明
+1.  贡献者授予您一项全球性、免许可费的专利许可，**仅限于使用、修改、分发本开源软件（即上述“开放共享的内容”）**。
+2.  此项授权**明确排除**实施上述 **“不共享的专有技术”** 中任何内容的权利。获取此类权利需另行签署商业许可协议。
+3.  若您对贡献者发起专利诉讼，此专利授权将自动终止。
+
+### 使用限制
+- 禁止在未获得商业许可的情况下，将本仓库内容用于任何商业产品的开发、制造或销售。
+- 禁止对开源或专有组件进行反向工程，以获取核心商业秘密。
+- 遵守所有适用的出口管制法律。
+
+---
+
+© 2025 LIWEI LI。 版权所有。
+本文件最后更新：2025年12月21日
+*我们正在重新定义计算的物理基础。*
