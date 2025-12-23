@@ -1,226 +1,132 @@
-# LIWEI LI Green Computing Architecture 🌱
 
-[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
-[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+LIWEI LI 开源三元光子计算架构
 
-**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+版本： v3.0 开源版
+发布日期： 2025年12月22日
+架构类型： 垂直异构3D集成计算系统
+逻辑范式： 平衡三值逻辑（-1, 0, +1）
+核心许可： Apache License 2.0 (L1-L4层)
+
+项目说明：此版本发布恰逢冬至（一阳来复），象征着计算架构在传统二进制范式之后的新生与转折。
+
+📖 项目概述
+
+本项目是 LIWEI LI 三元光子计算架构的开源实现部分，旨在构建一个开放、可持续的下一代计算生态系统。我们采用 “4+1”垂直堆叠设计 和 “开放核心 + 专有增强” 策略：
+
+· 开放核心 (L1 至 L4)：所有设计文件与工具链完全开源（Apache 2.0），用于研究、学习和生态共建。
+· 专有增强 (L+1)：包含专利技术及核心商业机密，负责系统集成优化与长期可靠性保障。
+
+🏗️ 架构栈 (“4+1”)
+
+层级 名称 状态 核心功能
+L1 FMOS三元逻辑核心 ✅ 完全开源 基础-1/0/+1三元计算引擎，含标准单元库。
+L2 高速I/O与路由层 ✅ 完全开源 数据调度、TSV管理，支持三元差分信号。
+L3 硅光子互联层 ✅ 完全开源 光速数据传输与计算，提供光子器件PDK。
+L4 三元存储架构 ✅ 完全开源 高密度三态数据存储，支持近内存计算。
+L+1 系统增强层 🔒 专有技术 集成优化、热管理及长期可靠性保障。
+
+🚀 快速开始
+
+1. 获取代码
+
+```bash
+git clone https://github.com/liweili-oss/ternary-architecture.git
+cd ternary-architecture
+```
+
+2. 设置环境
+
+我们提供了针对不同角色的环境配置脚本：
+
+```bash
+# 研究人员使用
+./scripts/setup_research_env.sh
+
+# 硬件开发者使用
+./scripts/setup_hardware_env.sh
+```
+
+3. 运行示例
+
+环境配置完成后，可以运行一个基础的三元算术逻辑单元(ALU)仿真示例：
+
+```bash
+python examples/ternary_alu_sim.py
+```
+
+📂 开源组件详解
+
+🧠 L1: FMOS三元逻辑核心 (/hardware/fmos)
+
+· 逻辑系统：对称电压（±0.9V）平衡三元逻辑。
+· 标准单元库：包含38个组合与时序逻辑单元。
+· 工艺兼容：与28nm及以上CMOS工艺节点兼容。
+· 交付物：GDSII物理布局、Yosys综合脚本、SystemVerilog类型包、完整ATPG测试套件。
+
+🔌 L2: 高速I/O与路由层 (/hardware/io_interconnect)
+
+· 信号协议：三元差分PAM-3信号，嵌入式时钟恢复。
+· 数据速率：目标4-8 Gb/s/通道。
+· 交付物：驱动/接收器SPICE模型、3D寄生提取脚本、Chiplet参考设计。
+
+🌐 L3: 硅光子互联层 (/hardware/photonics)
+
+· 波导平台：220nm硅在2μm二氧化硅上。
+· 调制技术：载流子耗尽型马赫-曾德尔干涉仪。
+· 交付物：基础光子器件GDSII布局、Lumerical仿真脚本、光学计算Python API。
+
+💾 L4: 三元存储架构 (/hardware/memory)
+
+· 存储理念：利用三态单元实现原生三元数据存储。
+· 密度优势：理论信息密度较二进制提升约1.58倍。
+· 交付物：存储器控制器RTL、三元纠错码实现、近内存计算接口规范。
+
+🔧 开发工具链
+
+项目提供完整的开源EDA工具链，目录结构如下：
+
+```
+ternary-architecture/
+├── synthesis/          # 综合脚本与约束 (Yosys/OpenROAD)
+├── simulation/         # 仿真环境 (Verilator/Questa集成)
+├── verification/       # 验证组件 (UVM/形式验证)
+├── physical/          # 物理设计流程
+├── modeling/          # 功耗、性能与热模型
+└── examples/          # 从单元到系统的各级参考设计
+```
+
+⚖️ 知识产权说明
+
+本项目采用清晰的三层知识产权管理框架：
+
+1. 开源部分 (L1-L4)：基于 Apache License 2.0 开源，可自由使用、修改和分发。
+2. 专利保护部分：涵盖4+1单元电路拓扑、亚光子接口结构、自修复系统等关键技术，对合规实施提供必要许可。
+3. 商业机密部分：L+1层的具体实现细节，尤其是复合材料生命层的配方与工艺，属于商业机密，不予公开。
+
+🤝 如何参与贡献
+
+我们欢迎并感谢所有形式的贡献！
+
+· 报告问题：请在 GitHub Issues 提交Bug或功能请求。
+· 提交代码：请Fork本仓库，并在修改后通过Pull Request提交。
+· 贡献领域：
+  · 🛠️ 硬件设计：新的三元IP核、物理设计优化。
+  · ⚙️ 软件工具：编译器后端、仿真模型、自动化脚本。
+  · 📚 文档与示例：完善教程、翻译、应用案例。
+  · 🔬 研究验证：独立的性能分析与学术论文。
+
+📜 许可证
+
+除非另有说明，本仓库中 L1 至 L4 层的所有代码和文档均根据 Apache License 2.0 的条款提供。详情请参阅 LICENSE 文件。
+
+📮 联系与支持
+
+· 开源社区：GitHub Discussions (技术讨论)
+· 学术合作：research@ternary-architecture.org
+· 产业合作：partnership@ternary-architecture.org
 
 ---
 
-## 🚀 The Vision
-
-We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
-
-## 💡 Core Innovation: "4+1" Architecture
-
-### 🧠 Ternary Computing
-- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
-- **Why**: Higher information density, reducing computational complexity
-- **Example**: Ternary full adder uses 37.5% fewer gates
-
-### 🔦 Photonic Interconnects  
-- **What**: Using light instead of electricity for data movement
-- **Why**: Eliminates "memory wall" and "bandwidth wall"
-
-## 🎯 Get Started
-
-We welcome contributors from all backgrounds!
-
-**Quick Start:**
-1. ⭐ **Star this repo** to show your support
-2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
-3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
-4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-## 💻 代码示例
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
-
-# 1. Clone the project
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-python -m pytest tests/ -v
-
-# 4. Run demo
-python examples/simple_demo.py
-
-# Run all tests
-pytest tests/
-
-# Run specific test with verbose output
-pytest tests/test_ternary.py -v
-
-# Run tests with coverage report
-pytest tests/ --cov=src --cov-report=html
-
-# Run performance benchmarks
-python examples/performance_benchmark.py
-
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. 安装依赖（可选）
-pip install numpy
-
-# 3. 运行演示
-python examples/simple_demo.py
-
-from src.ternary import TernaryLogic
-
-# 体验三元计算
-result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
-print(f"结果: {result}")
-
-
-from src.ternary import TernaryLogic
-
-def test_ternary_logic():
-    """测试三元逻辑"""
-    assert TernaryLogic.AND(1, 1) == 1
-    assert TernaryLogic.AND(1, 0) == 0
-    assert TernaryLogic.AND(1, -1) == -1
-    
-    assert TernaryLogic.OR(-1, -1) == -1
-    assert TernaryLogic.OR(-1, 0) == 0
-    assert TernaryLogic.OR(-1, 1) == 1
-    
-    assert TernaryLogic.NOT(1) == -1
-    assert TernaryLogic.NOT(0) == 0
-    assert TernaryLogic.NOT(-1) == 1
-
-def test_conversion():
-    """测试值转换"""
-    assert TernaryLogic.to_ternary(0.8) == 1
-    assert TernaryLogic.to_ternary(0.2) == 0
-    assert TernaryLogic.to_ternary(-0.5) == -1
-
-if __name__ == "__main__":
-    test_ternary_logic()
-    test_conversion()
-    print("✅ 所有测试通过!")
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/Green-Computing-Arch
-**Status Legend:**
-- 🟢 **Active Development** - Ready for contributions
-- 🟡 **Planning Phase** - In design, discussions welcome  
-- 🔵 **Foundation Ready** - Basic framework established
-
-
-
-## 🙋 Join the Movement
-
-This is more than code - it's a collective effort to redefine computing foundations.
-
-**Your curiosity and expertise are our most valuable resources.**
+我们相信，通过开放协作与技术创新，能够共同突破传统计算的能效与密度瓶颈，开启可持续计算的新篇章。
 
 ---
-*Architectural Concept & Open-Source Release by LIWEI LI*
