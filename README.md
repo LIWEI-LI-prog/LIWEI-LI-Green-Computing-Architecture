@@ -1,4 +1,4 @@
-# LIWEI Green Computing Architecture
+# LIWEELI Green Computing Architecture
 
 **文档** | **中文版** | **社区** | **加入讨论** | **License** | **Apache 2.0**
 
@@ -99,7 +99,7 @@ This framework is released for public review and community collaboration. We wel
 
 *This document describes the architecture at the principle and stacking‑organisation level. It does not include logic‑layer implementations, detailed circuit designs, or proprietary technical parameters.*
 
-# LIWEI 绿色计算架构
+# LIWEILI 绿色计算架构
 
 **文档** | **English** | **社区** | **加入讨论** | **License** | **Apache 2.0**
 
