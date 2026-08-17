@@ -51,7 +51,7 @@ This architecture is released for review and collaboration. We welcome discussio
 ## Contact
 
 **IP Owner:** LI WEI LI  
-**Email:** conta@liweili-architecture.com 
+**Email:** contact@liweili-architecture.com 
 **GitHub:** [LIWEI-LI-prog](https://github.com/LIWEI-LI-prog)  
 **Date:** 2026-08-17
 
