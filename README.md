@@ -1,226 +1,67 @@
-# LIWEI LI Green Computing Architecture 🌱
+# 3D 异构堆叠计算架构
+## ——面向可持续高能效计算的开放架构方法
 
-[![中文](https://img.shields.io/badge/文档-中文版-brightgreen)](README_ZH.md)
-[![Discussions](https://img.shields.io/badge/社区-加入讨论-blue)](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+**文档版本：** 1.0-PUBLIC  
+**日期：** 2026 年 8 月 17 日  
+**IP Owner:** LI WEI LI  
+**分类：** 公开技术简介  
+**GitHub 仓库：** [链接待补充]
 
-**A revolutionary open-source computing architecture leveraging ternary logic and photonic interconnects to break through energy and bandwidth walls.**
+
+## 一、动机
+
+计算需求持续增长，能效与资源效率成为核心挑战。3D 异构堆叠提供了一条不依赖单一器件制程微缩的扩展路径——将多种功能层（存储、互联、计算、传感等）在垂直方向集成，实现更高带宽、更低功耗和更小占用面积。
+
+
+## 二、架构定位
+
+本架构是一种通用的 3D 异构堆叠方法，旨在将不同工艺节点的功能层进行垂直整合。其核心在于：
+
+- **分层灵活集成**：支持不同功能层（如存储、互连、传感、处理）按需组合
+- **缩短层间通信路径**：通过垂直互连减少传统平面芯片中的长距数据移动
+- **适配多样化应用**：面向 AI 加速、边缘计算、传感融合等场景
+
+架构本身不限定具体逻辑层设计，也不依赖特定工艺或材料体系。
+
+
+## 三、关键层次（通用描述）
+
+| 层级 | 功能定位 |
+| :--- | :--- |
+| **存储层** | 高速数据存取，支持不同类型存储介质混合堆叠 |
+| **互连层** | 垂直方向的高密度信号路由，支持层间高效通信 |
+| **接口层** | 与外部系统的数据交换，兼容标准化通信协议 |
+| **功能层** | 按需配置的计算、传感或信号处理单元 |
+
+各层次可根据应用场景增减或调整，不预设固定配置。
+
+
+## 四、优势方向
+
+- **降低数据搬运能耗**：垂直方向缩短物理通信距离
+- **提升带宽密度**：支持大规模并行垂直互连
+- **提高系统灵活性**：各功能层可独立设计、迭代与替换
+- **适配异构集成**：兼容光学、电学及其他物理媒介
+
+
+## 五、当前状态与开放合作
+
+本架构目前处于开放研发阶段。欢迎以下方向的合作：
+
+- 3D 堆叠制造与封装工艺探讨
+- 高密度垂直互连方案交流
+- 异构计算体系结构研究与开发
+
+有兴趣的团队或个人可通过以下方式联系。
+
+
+## 联系方式
+
+**IP Owner:** LI WEI LI  
+**邮箱：** li@liwei-li.com  
+**GitHub：** [LIWEI-LI-prog](https://github.com/LIWEI-LI-prog)  
+**日期：** 2026 年 8 月 17 日
 
 ---
 
-## 🚀 The Vision
-
-We envision a future where powerful computational capacity is as accessible, affordable, and environmentally sustainable as water and electricity.
-
-## 💡 Core Innovation: "4+1" Architecture
-
-### 🧠 Ternary Computing
-- **What**: Three-state logic (-1, 0, +1) beyond traditional binary
-- **Why**: Higher information density, reducing computational complexity
-- **Example**: Ternary full adder uses 37.5% fewer gates
-
-### 🔦 Photonic Interconnects  
-- **What**: Using light instead of electricity for data movement
-- **Why**: Eliminates "memory wall" and "bandwidth wall"
-
-## 🎯 Get Started
-
-We welcome contributors from all backgrounds!
-
-**Quick Start:**
-1. ⭐ **Star this repo** to show your support
-2. 🐛 **Explore [Good First Issues](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)** - find beginner-friendly tasks
-3. 💬 **Join [Discussion](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/discussions)** - share your ideas
-4. 🐛 **Report an [Issue](https://github.com/liwei-li/IMWEI-LI-Green-Computing-Architecture/issues/new)** - found a bug or have a suggestion?
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-## 💻 代码示例
-
-from src.core.ternary_logic import TernaryLogic, TernaryState
-
-# Create ternary logic instance
-logic = TernaryLogic()
-
-# Perform ternary operations
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-# More complex operations
-a = TernaryState.TRUE
-b = TernaryState.FALSE
-c = TernaryState.UNKNOWN
-
-ternary_result = logic.ternary_add(a, b, c)
-print(f"Ternary addition result: {ternary_result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python examples/simple_demo.py
-
-# 1. Clone the project
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run tests
-python -m pytest tests/ -v
-
-# 4. Run demo
-python examples/simple_demo.py
-
-# Run all tests
-pytest tests/
-
-# Run specific test with verbose output
-pytest tests/test_ternary.py -v
-
-# Run tests with coverage report
-pytest tests/ --cov=src --cov-report=html
-
-# Run performance benchmarks
-python examples/performance_benchmark.py
-
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# Create architecture instance
-arch = FourPlusOneArchitecture()
-
-# Analyze performance
-performance = arch.analyze_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency']:.2f} TOPS/W")
-print(f"Bandwidth: {performance['bandwidth']:.2f} Tbps")
-
-# Generate technical report
-report = arch.generate_technical_report()
-print(report.summary)
-
-from src.core.ternary_computing import TernaryLogic, TernaryState
-
-# 创建三元逻辑实例
-logic = TernaryLogic()
-
-# 执行三元运算
-result = logic.and_gate(TernaryState.TRUE, TernaryState.UNKNOWN)
-print(f"TRUE AND UNKNOWN = {result}")
-
-from src.architecture.fourplus1_architecture import FourPlusOneArchitecture
-
-# 创建架构实例
-arch = FourPlusOneArchitecture()
-
-# 分析性能
-performance = arch.calculate_performance()
-print(f"Energy Efficiency: {performance['energy_efficiency_tops_per_w']:.2f} TOPS/W")
-
-# 生成技术报告
-print(arch.generate_technical_summary())
-
-# 运行所有测试
-pytest tests/
-
-# 运行特定测试
-pytest tests/test_ternary.py -v
-
-# 带覆盖率的测试
-pytest tests/ --cov=src --cov-report=html
-
-## 🚀 快速体验
-
-### 在线运行
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/LIWEI-LI-Green-Computing-Architecture.git
-cd LIWEI-LI-Green-Computing-Architecture
-
-# 2. 安装依赖（可选）
-pip install numpy
-
-# 3. 运行演示
-python examples/simple_demo.py
-
-from src.ternary import TernaryLogic
-
-# 体验三元计算
-result = TernaryLogic.AND(1, 0)  # TRUE AND UNKNOWN
-print(f"结果: {result}")
-
-
-from src.ternary import TernaryLogic
-
-def test_ternary_logic():
-    """测试三元逻辑"""
-    assert TernaryLogic.AND(1, 1) == 1
-    assert TernaryLogic.AND(1, 0) == 0
-    assert TernaryLogic.AND(1, -1) == -1
-    
-    assert TernaryLogic.OR(-1, -1) == -1
-    assert TernaryLogic.OR(-1, 0) == 0
-    assert TernaryLogic.OR(-1, 1) == 1
-    
-    assert TernaryLogic.NOT(1) == -1
-    assert TernaryLogic.NOT(0) == 0
-    assert TernaryLogic.NOT(-1) == 1
-
-def test_conversion():
-    """测试值转换"""
-    assert TernaryLogic.to_ternary(0.8) == 1
-    assert TernaryLogic.to_ternary(0.2) == 0
-    assert TernaryLogic.to_ternary(-0.5) == -1
-
-if __name__ == "__main__":
-    test_ternary_logic()
-    test_conversion()
-    print("✅ 所有测试通过!")
-
-# 1. 克隆项目
-git clone https://github.com/LIWEI-LI/Green-Computing-Arch
-**Status Legend:**
-- 🟢 **Active Development** - Ready for contributions
-- 🟡 **Planning Phase** - In design, discussions welcome  
-- 🔵 **Foundation Ready** - Basic framework established
-
-
-
-## 🙋 Join the Movement
-
-This is more than code - it's a collective effort to redefine computing foundations.
-
-**Your curiosity and expertise are our most valuable resources.**
-
----
-*Architectural Concept & Open-Source Release by LIWEI LI*
+*本介绍仅涉及 3D 异构堆叠的通用方法，不包含具体逻辑层实现细节。*
