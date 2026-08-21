@@ -1,6 +1,6 @@
-# LIWEILI Green Computing Architecture
+# LIWEI LI Green Computing Architecture
 
-**文档** | **中文版** | **社区** | **加入讨论** | **License** | **Apache 2.0**
+**文档** | [中文版](#liwei-li-绿色计算架构) | **社区** | [加入讨论](https://github.com/LIWEI-LI-prog/LIWEI-LI-Green-Computing-Architecture/discussions) | **License** | [Apache 2.0](LICENSE)
 
 ---
 
@@ -99,9 +99,9 @@ This framework is released for public review and community collaboration. We wel
 
 *This document describes the architecture at the principle and stacking‑organisation level. It does not include logic‑layer implementations, detailed circuit designs, or proprietary technical parameters.*
 
-# LIWEILI 绿色计算架构
+# LIWEI LI 绿色计算架构
 
-**文档** | **English** | **社区** | **加入讨论** | **License** | **Apache 2.0**
+**文档** | [English](#liwei-li-green-computing-architecture) | **社区** | [加入讨论](https://github.com/LIWEI-LI-prog/LIWEI-LI-Green-Computing-Architecture/discussions) | **License** | [Apache 2.0](LICENSE)
 
 ---
 
@@ -111,7 +111,7 @@ This framework is released for public review and community collaboration. We wel
 
 ## 愿景
 
-我们 envision 一个计算能力像水电一样可及、平价、可持续的未来。
+我们设想一个计算能力像水电一样可及、平价、可持续的未来。
 
 本架构不是一个固定的设计，而是一个 **框架** ——一种围绕物理信号、因果连续性与自适应学习来组织计算的方式，可跨多种技术与应用场景实现。
 
@@ -121,7 +121,7 @@ This framework is released for public review and community collaboration. We wel
 
 ### 1. 直接接入真实世界信号
 
-系统直接读取连续物理信号（光、声、振动、磁场），**不经** 离散化处理为 Token 或数字样本。输入即物理事件本身，保留其原始相位与 timing 信息。
+系统直接读取连续物理信号（光、声、振动、磁场），**不经** 离散化处理为 Token 或数字样本。输入即物理事件本身，保留其原始相位与时序信息。
 
 ### 2. 处理中的线性保真
 
